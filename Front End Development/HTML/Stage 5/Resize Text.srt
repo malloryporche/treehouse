@@ -1,0 +1,475 @@
+1
+00:00:00,230 --> 00:00:05,230
+Now let's continue.
+I'm going to set the font weight to
+
+2
+00:00:05,230 --> 00:00:12,000
+normal.
+so font weight is going to be normal.
+
+3
+00:00:12,000 --> 00:00:15,330
+So this will basically unbold our headline
+
+4
+00:00:15,330 --> 00:00:19,000
+because headline elements are bold by
+default.
+
+5
+00:00:19,000 --> 00:00:24,624
+And then I'm going to set the line-height
+to 0.8 ems.
+
+6
+00:00:24,624 --> 00:00:26,262
+Now the line-height
+
+7
+00:00:26,262 --> 00:00:31,880
+property determines the amount of space
+between each line of text.
+
+8
+00:00:31,880 --> 00:00:34,440
+This is more important in paragraph text,
+
+9
+00:00:34,440 --> 00:00:37,980
+and actually it's more apparent in
+paragraph text.
+
+10
+00:00:37,980 --> 00:00:41,820
+But we want to adjust the spacing here as
+well.
+
+11
+00:00:41,820 --> 00:00:45,460
+Again we're using relative ems as the unit
+here.
+
+12
+00:00:46,570 --> 00:00:49,840
+Now let's style or second level headline,
+
+13
+00:00:51,290 --> 00:00:56,220
+and I'm going to type out the code and
+then explain it after I'm done typing.
+
+14
+00:00:56,220 --> 00:01:00,370
+So font size is going to be 0.75 ems.
+
+15
+00:01:00,370 --> 00:01:04,360
+The margin is going to be negative 5
+pixels,
+
+16
+00:01:04,360 --> 00:01:10,060
+0 and then 0; so we're using 3 values
+there.
+
+17
+00:01:10,060 --> 00:01:14,600
+And then the font weight is going to be
+normal.
+
+18
+00:01:14,600 --> 00:01:16,180
+So what is all this mean?
+
+19
+00:01:16,180 --> 00:01:19,520
+Well the font size and font weight should
+be
+
+20
+00:01:19,520 --> 00:01:23,220
+familiar to you The font weight being set
+to normal
+
+21
+00:01:23,220 --> 00:01:27,230
+will basically unbold our text like we
+just did previously,
+
+22
+00:01:27,230 --> 00:01:29,810
+and I'll see what that looks like in a
+moment.
+
+23
+00:01:29,810 --> 00:01:33,850
+And then the font size is set to 0.75 ms,
+so that will
+
+24
+00:01:33,850 --> 00:01:39,410
+make the font size actually pretty small,
+because remember, this is a multiplier.
+
+25
+00:01:39,410 --> 00:01:41,310
+But the new thing I've done here is
+
+26
+00:01:41,310 --> 00:01:45,050
+set a negative margin, and I've also set
+three
+
+27
+00:01:45,050 --> 00:01:49,990
+values for the margin instead of two like
+we've been using previously.
+
+28
+00:01:49,990 --> 00:01:55,340
+The first value here, sets the top.
+The second
+
+29
+00:01:55,340 --> 00:02:01,880
+value, sets the left and right.
+And the third value sets the bottom.
+
+30
+00:02:01,880 --> 00:02:06,790
+In other words, this element only has
+margins applied to
+
+31
+00:02:06,790 --> 00:02:07,810
+the top.
+
+32
+00:02:07,810 --> 00:02:12,920
+This negative value that we're applying to
+the top will actually pull the
+
+33
+00:02:12,920 --> 00:02:18,960
+element closer to the other elements
+around it, rather than pushing it away.
+
+34
+00:02:18,960 --> 00:02:21,500
+This is a common technique when you want
+elements
+
+35
+00:02:21,500 --> 00:02:26,550
+to be tighter together, especially when
+you're styling typography.
+
+36
+00:02:26,550 --> 00:02:28,710
+We're going to do more styling throughout,
+but
+
+37
+00:02:28,710 --> 00:02:32,350
+let's finish up some more font related
+stuff.
+
+38
+00:02:32,350 --> 00:02:33,290
+So
+
+39
+00:02:33,290 --> 00:02:37,900
+I'm going to save that out, and up here.
+
+40
+00:02:37,900 --> 00:02:42,050
+I'm going to select the body element once
+again.
+
+41
+00:02:42,050 --> 00:02:47,430
+So let's come up to the top here, and
+select our body again.
+
+42
+00:02:49,520 --> 00:02:52,290
+And we've already selected our body down
+in our colors,
+
+43
+00:02:52,290 --> 00:02:55,190
+but I want this to be separate from our
+colors.
+
+44
+00:02:55,190 --> 00:02:56,720
+And easy to read.
+
+45
+00:02:56,720 --> 00:03:00,260
+So, we're going to create a second body
+selector here.
+
+46
+00:03:00,260 --> 00:03:07,050
+And we're gonna apply the other font we
+picked out, which is open Sans.
+
+47
+00:03:07,050 --> 00:03:09,400
+And we're going to fall back to Sans
+
+48
+00:03:09,400 --> 00:03:13,270
+Serif, if for some reason Open Sans isn't
+available.
+
+49
+00:03:13,270 --> 00:03:14,810
+This will set everything
+
+50
+00:03:14,810 --> 00:03:18,980
+on the site to use Open Sans because we're
+applying it to the body.
+
+51
+00:03:18,980 --> 00:03:22,380
+With the exception of our first-level
+headline,
+
+52
+00:03:22,380 --> 00:03:25,280
+which has another font applied to it and
+
+53
+00:03:25,280 --> 00:03:30,570
+is more specific than the body, so it will
+be over-ridden for that one element.
+
+54
+00:03:30,570 --> 00:03:34,480
+This is a good example of how cascading in
+CSS works.
+
+55
+00:03:35,570 --> 00:03:40,340
+To wrap this up, we're going to style the
+navigation section and the footer.
+
+56
+00:03:40,340 --> 00:03:43,840
+We're not going to use any new properties
+or techniques.
+
+57
+00:03:43,840 --> 00:03:49,100
+Instead, I want you to try and follow
+along, and understand what we're doing.
+
+58
+00:03:50,270 --> 00:03:53,440
+So, let's go ahead and create a
+
+59
+00:03:53,440 --> 00:03:56,940
+new section here by copying our multi-line
+comment.
+
+60
+00:03:58,010 --> 00:04:00,230
+And let's scroll down here.
+
+61
+00:04:00,230 --> 00:04:05,473
+And I'm gonna put a new multi-line comment
+just after our
+
+62
+00:04:05,473 --> 00:04:08,870
+h2 there.
+And I'm going to call those, navigation.
+
+63
+00:04:11,230 --> 00:04:15,490
+And then I'm going to select our nav
+element here.
+
+64
+00:04:15,490 --> 00:04:18,880
+And we already have a selector for this,
+but again, not selecting colors.
+
+65
+00:04:18,880 --> 00:04:22,370
+And I wanna keep that separate in this
+particular project.
+
+66
+00:04:22,370 --> 00:04:24,120
+But you could put them together if you'd
+like.
+
+67
+00:04:25,150 --> 00:04:28,890
+I'm going to align the text center in our
+nav.
+
+68
+00:04:28,890 --> 00:04:31,150
+I'm going to set some padding on the top
+and
+
+69
+00:04:31,150 --> 00:04:35,180
+bottom to ten pixels, and zero on the left
+and right.
+
+70
+00:04:35,180 --> 00:04:36,470
+And then I'm going to apply
+
+71
+00:04:36,470 --> 00:04:39,390
+some margin to the top, but I want
+
+72
+00:04:39,390 --> 00:04:42,750
+everything else to be zero for our
+navigation.
+
+73
+00:04:42,750 --> 00:04:48,540
+Now I'm going to select this multi-line
+comment once again, and
+
+74
+00:04:48,540 --> 00:04:54,800
+just after our navigation here, I'm going
+to create a new one for the footer.
+
+75
+00:04:56,050 --> 00:04:58,180
+And I'm going to select our footer,
+
+76
+00:04:58,180 --> 00:05:01,950
+and then we're going to create some
+decorations
+
+77
+00:05:01,950 --> 00:05:03,150
+inside of our rule here.
+
+78
+00:05:03,150 --> 00:05:05,874
+So we're going to set the font size to
+0.75 ms.
+
+79
+00:05:07,070 --> 00:05:10,490
+So the font in our footer will be
+relatively small.
+
+80
+00:05:10,490 --> 00:05:14,500
+We're gonna set the text alignment to be
+center, once again.
+
+81
+00:05:15,810 --> 00:05:18,550
+We're going to set the padding on the top
+to
+
+82
+00:05:18,550 --> 00:05:22,990
+50 pixels, so we are actually using a new
+property here.
+
+83
+00:05:22,990 --> 00:05:25,140
+Padding, top.
+
+84
+00:05:25,140 --> 00:05:27,150
+Which is just another way of
+
+85
+00:05:27,150 --> 00:05:31,970
+specifying that we only want padding on
+the top, and then finally,
+
+86
+00:05:33,180 --> 00:05:39,280
+we're going to set the color to this very
+light grey color here.
+
+87
+00:05:39,280 --> 00:05:45,590
+So, let's go ahead and save this and
+refresh the page to see how this looks.
+
+88
+00:05:45,590 --> 00:05:48,980
+If I resize the browser window here, it
+will
+
+89
+00:05:48,980 --> 00:05:51,630
+cut off our images and we'll fix that
+later on.
+
+90
+00:05:52,720 --> 00:05:57,410
+But you can start to see our mobile
+website coming together.
+
+91
+00:05:57,410 --> 00:05:58,710
+We have our footer here.
+
+92
+00:06:00,800 --> 00:06:06,820
+Ad we have the header up at the top.
+There still some spacing issues here, and
+
+93
+00:06:06,820 --> 00:06:12,230
+a lot of alignment issues, and like I said
+the images are still entirely too large.
+
+94
+00:06:12,230 --> 00:06:16,260
+There's a few problems here, but we're
+going to fix all of those things.
+
+95
+00:06:16,260 --> 00:06:17,910
+The more you practice with fonts and
+
+96
+00:06:17,910 --> 00:06:21,550
+typography properties in CSS, the better
+you'll get.
+
+97
+00:06:21,550 --> 00:06:23,360
+It's important that you play with these as
+
+98
+00:06:23,360 --> 00:06:26,270
+much as you can, because good typography
+skills
+
+99
+00:06:26,270 --> 00:06:29,380
+will help you a lot when building any web
+page.
+
+100
+00:06:29,380 --> 00:06:32,440
+After a quick assessment, we'll style our
+portfolio.
+

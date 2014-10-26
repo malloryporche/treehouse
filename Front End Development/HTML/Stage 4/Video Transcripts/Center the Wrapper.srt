@@ -1,0 +1,415 @@
+1
+00:00:00,110 --> 00:00:02,470
+Inside of the selector, I'm going to add
+some
+
+2
+00:00:02,470 --> 00:00:05,850
+new properties and values that we haven't
+seen yet.
+
+3
+00:00:05,850 --> 00:00:08,900
+I'll type them out, and I want you to
+follow along.
+
+4
+00:00:08,900 --> 00:00:13,410
+After we've typed them and seen the
+result, I'll explain what they mean.
+
+5
+00:00:13,410 --> 00:00:19,560
+So I'm going to type max-width, and
+
+6
+00:00:19,560 --> 00:00:25,650
+give it a value of 940 pixels or px.
+
+7
+00:00:25,650 --> 00:00:30,681
+And then I'm going to type margin followed
+by a zero
+
+8
+00:00:30,681 --> 00:00:36,510
+and then a space and then word auto.
+Just like that.
+
+9
+00:00:36,510 --> 00:00:40,600
+Now, let's save and I'd like you to guess
+as to
+
+10
+00:00:40,600 --> 00:00:45,400
+what this might do right before we refresh
+the page here.
+
+11
+00:00:45,400 --> 00:00:47,490
+So, let's refresh.
+
+12
+00:00:47,490 --> 00:00:51,190
+And, as you can see, it looks like it's
+centered
+
+13
+00:00:51,190 --> 00:00:55,170
+a lot of the stuff on our page here.
+
+14
+00:00:55,170 --> 00:00:59,590
+So everything that was inside of that div
+is now centered.
+
+15
+00:00:59,590 --> 00:01:03,180
+But it has not affected things that were
+outside of the div.
+
+16
+00:01:04,310 --> 00:01:09,360
+Now, let's investigate the code.
+The first property, called max-width, is
+
+17
+00:01:09,360 --> 00:01:15,670
+closely related to the simpler and more
+common property, width.
+
+18
+00:01:15,670 --> 00:01:16,290
+So we
+
+19
+00:01:16,290 --> 00:01:21,210
+could have just said width and then given
+it a value, but
+
+20
+00:01:21,210 --> 00:01:26,400
+instead, we went with max-width.
+We're basically saying
+
+21
+00:01:26,400 --> 00:01:32,040
+that we want the width to be no larger
+than 940 pixels across.
+
+22
+00:01:32,040 --> 00:01:35,920
+However, the width could potentially be
+smaller than that
+
+23
+00:01:35,920 --> 00:01:39,810
+if the browser were less than 400 pixels
+wide.
+
+24
+00:01:39,810 --> 00:01:41,370
+This will come in handy when
+
+25
+00:01:41,370 --> 00:01:46,560
+we make more styling adjustments for
+mobile and desktop devices.
+
+26
+00:01:46,560 --> 00:01:48,910
+The next declaration sets the margin for
+
+27
+00:01:48,910 --> 00:01:53,590
+the wrapper, or the spacing around the
+element.
+
+28
+00:01:53,590 --> 00:01:56,450
+This is shorthand that will set the margin
+
+29
+00:01:56,450 --> 00:02:01,470
+on all four sides by using just two
+values.
+
+30
+00:02:01,470 --> 00:02:06,580
+The first value sets the margin on the top
+and the bottom of the element,
+
+31
+00:02:06,580 --> 00:02:11,780
+which in this case is just set to zero.
+The unit doesn't matter in this case,
+
+32
+00:02:11,780 --> 00:02:17,180
+because if we were to set it to a pixel
+value, like this, or
+
+33
+00:02:17,180 --> 00:02:23,190
+another unit such as a percentage value,
+it would still mean the same thing.
+
+34
+00:02:23,190 --> 00:02:27,660
+So we can go ahead and just leave it at
+zero without declaring a unit.
+
+35
+00:02:28,770 --> 00:02:31,830
+The second value, auto, will simply fill
+
+36
+00:02:31,830 --> 00:02:36,680
+in any space that's on the left or right
+side of the margin.
+
+37
+00:02:36,680 --> 00:02:39,460
+In other words, if we were to take the
+entire
+
+38
+00:02:39,460 --> 00:02:43,670
+width of the page and then subtract 940
+pixels in
+
+39
+00:02:43,670 --> 00:02:46,760
+the middle, the rest of the space on the
+left
+
+40
+00:02:46,760 --> 00:02:51,330
+and right is automatically filled in with
+whatever's left over.
+
+41
+00:02:51,330 --> 00:02:53,270
+We don't need to worry about it.
+
+42
+00:02:53,270 --> 00:02:57,390
+I want you to be able to see what's
+physically happening on the page,
+
+43
+00:02:57,390 --> 00:03:01,170
+so let's go ahead and color the
+background.
+
+44
+00:03:01,170 --> 00:03:02,520
+Orange.
+
+45
+00:03:02,520 --> 00:03:05,730
+And I've used another shorthand property
+here.
+
+46
+00:03:05,730 --> 00:03:10,010
+Instead of saying background color, I've
+just said background.
+
+47
+00:03:10,010 --> 00:03:13,440
+There are more properties that we can add
+to background, and we'll get into that
+
+48
+00:03:13,440 --> 00:03:17,390
+later, but for now, let's just save this
+and see what this does to the page.
+
+49
+00:03:18,630 --> 00:03:22,760
+So if I refresh the page, you can see that
+
+50
+00:03:22,760 --> 00:03:29,020
+this div is now colored orange, and if we
+scroll down,
+
+51
+00:03:29,020 --> 00:03:32,310
+you can see a little bit more of what this
+looks like.
+
+52
+00:03:32,310 --> 00:03:37,560
+If I resize the browser, you'll see that
+it adds a scroll
+
+53
+00:03:37,560 --> 00:03:42,680
+bar to the bottom of the page, but if I
+move the scroll bar just
+
+54
+00:03:42,680 --> 00:03:48,200
+slightly, you'll see that it's only adding
+that because the images are too large,
+
+55
+00:03:48,200 --> 00:03:51,750
+when in fact the div that we added, the
+
+56
+00:03:51,750 --> 00:03:57,640
+wrapper, fits perfectly inside of the
+browser window here.
+
+57
+00:03:57,640 --> 00:04:01,730
+So, if the images were smaller, we
+wouldn't get this scroll bar.
+
+58
+00:04:01,730 --> 00:04:05,000
+But what that means is that this element,
+
+59
+00:04:05,000 --> 00:04:09,260
+this wrapper, is flexing with the browser
+window.
+
+60
+00:04:09,260 --> 00:04:13,610
+It has a maximum width of 940 pixels, but
+it can get infinitely
+
+61
+00:04:13,610 --> 00:04:14,690
+smaller than that.
+
+62
+00:04:16,220 --> 00:04:19,640
+One problem here is that our text runs
+right up against the edge of the
+
+63
+00:04:19,640 --> 00:04:22,350
+element, and therefore will be right
+against the
+
+64
+00:04:22,350 --> 00:04:25,440
+edge of the browser window at smaller
+sizes.
+
+65
+00:04:25,440 --> 00:04:28,160
+We need to add some spacing around the
+inside
+
+66
+00:04:28,160 --> 00:04:32,260
+of the element called padding in order to
+fix this.
+
+67
+00:04:32,260 --> 00:04:37,500
+So, lets go ahead and add some padding
+right after our margin here.
+
+68
+00:04:37,500 --> 00:04:38,670
+So I'll say padding
+
+69
+00:04:39,700 --> 00:04:45,110
+zero and then the second value will be 5%.
+
+70
+00:04:45,110 --> 00:04:48,430
+Similar to margin we've used two values
+here.
+
+71
+00:04:48,430 --> 00:04:51,760
+The first value represents the top and
+bottom,
+
+72
+00:04:51,760 --> 00:04:55,490
+so there's zero padding on the top and
+bottom.
+
+73
+00:04:55,490 --> 00:04:59,920
+The second value represents the left and
+right.
+
+74
+00:04:59,920 --> 00:05:05,410
+In our case, we're applying 5% padding to
+both sides of the element.
+
+75
+00:05:05,410 --> 00:05:12,370
+This will be 5% of the total width of the
+wrapper element itself.
+
+76
+00:05:12,370 --> 00:05:16,120
+Let's go ahead and save this and then
+refresh
+
+77
+00:05:16,120 --> 00:05:20,030
+the preview to see what this did for us.
+
+78
+00:05:20,030 --> 00:05:24,620
+As you can see, we now have some spacing
+on the inside of
+
+79
+00:05:24,620 --> 00:05:29,870
+our element, as well as some spacing on
+the outside of our element.
+
+80
+00:05:31,030 --> 00:05:31,230
+If
+
+81
+00:05:31,230 --> 00:05:35,890
+I go ahead and resize the browser, you'll
+notice that the
+
+82
+00:05:35,890 --> 00:05:41,190
+padding is changing ever so slightly,
+because it's only 5%,
+
+83
+00:05:41,190 --> 00:05:46,730
+but it's still definitely changing and
+adjusting to the width of the browser.
+
+84
+00:05:47,760 --> 00:05:53,438
+This will be important later on, because
+not all browser windows are the same size.
+
+85
+00:05:53,438 --> 00:05:55,644
+For example,
+
+86
+00:05:55,644 --> 00:05:58,770
+the browser window will be much smaller
+than
+
+87
+00:05:58,770 --> 00:06:01,300
+what it looks like on our desktop device
+here.
+

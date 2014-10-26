@@ -1,0 +1,624 @@
+1
+00:00:00,350 --> 00:00:03,210
+We're done with our portfolio and About
+pages.
+
+2
+00:00:03,210 --> 00:00:05,720
+Now we need to get to the Contact page.
+
+3
+00:00:05,720 --> 00:00:07,280
+Let's get started.
+
+4
+00:00:07,280 --> 00:00:11,650
+First, we'll start the same way we did
+with our About page.
+
+5
+00:00:11,650 --> 00:00:16,350
+We'll need to create a new file, called
+contact.html.
+
+6
+00:00:16,350 --> 00:00:21,790
+So I'll just right-click in my directory
+structure here.
+
+7
+00:00:21,790 --> 00:00:24,930
+And I'll say contact.html,
+
+8
+00:00:24,930 --> 00:00:29,440
+for the file name.
+And when I hit Enter, you can see that it
+
+9
+00:00:29,440 --> 00:00:34,780
+opens up contact.html.
+Now, let's copy our HTML
+
+10
+00:00:34,780 --> 00:00:39,500
+from the About page, and paste it in.
+To do that, I'm just
+
+11
+00:00:39,500 --> 00:00:45,110
+hitting Cmd+A on my Mac, or Ctrl+A if
+you're on Windows.
+
+12
+00:00:45,110 --> 00:00:49,970
+Then I hit Cmd+C to copy, or Ctrl+C if
+
+13
+00:00:49,970 --> 00:00:51,430
+you're on Windows.
+
+14
+00:00:51,430 --> 00:00:57,120
+And then finally, Cmd+V, or Ctrl+C to
+paste it in.
+
+15
+00:00:58,310 --> 00:01:04,100
+Next, we'll need to change the selected
+nav item to contact.
+
+16
+00:01:04,100 --> 00:01:09,260
+So, I'll go ahead and cut, by
+
+17
+00:01:09,260 --> 00:01:14,620
+hitting Cmd+x on my Mac or Ctrl+x if
+you're on Windows.
+
+18
+00:01:15,650 --> 00:01:20,770
+And then I'll paste it back in.
+Being very careful to preserve the
+
+19
+00:01:20,770 --> 00:01:25,990
+space, between class and href there.
+So
+
+20
+00:01:25,990 --> 00:01:30,420
+now, if I save out, and switch over to my
+
+21
+00:01:30,420 --> 00:01:36,560
+preview, and refresh, I can go to the
+Contact page.
+
+22
+00:01:36,560 --> 00:01:41,510
+And the contact nav item, will be
+selected.
+
+23
+00:01:41,510 --> 00:01:46,600
+However the Contact page looks exactly the
+same as our About page because we haven't
+
+24
+00:01:46,600 --> 00:01:52,850
+made any modifications to it yet.
+So let's go back to the Contact page.
+
+25
+00:01:52,850 --> 00:01:55,390
+And, similar to what we did previously,
+we're
+
+26
+00:01:55,390 --> 00:01:59,380
+going to delete everything inside of our
+section here.
+
+27
+00:02:00,580 --> 00:02:04,500
+Eventually, this page will be a two column
+layout, but
+
+28
+00:02:04,500 --> 00:02:07,020
+in our mobile view, it will only be a
+single
+
+29
+00:02:07,020 --> 00:02:09,960
+column with two sections.
+
+30
+00:02:09,960 --> 00:02:13,830
+So, we need to create a second section
+here.
+
+31
+00:02:13,830 --> 00:02:17,580
+So I'll just copy my section and paste it,
+and
+
+32
+00:02:17,580 --> 00:02:20,820
+now we have two for each one of our
+columns.
+
+33
+00:02:20,820 --> 00:02:25,970
+Again, this will be two columns on our
+desktop view but our
+
+34
+00:02:25,970 --> 00:02:30,980
+mobile view will just have them stacked.
+Now, the first section is pretty easy.
+
+35
+00:02:30,980 --> 00:02:32,280
+I'm just going to add a
+
+36
+00:02:32,280 --> 00:02:33,450
+third level headline.
+
+37
+00:02:36,880 --> 00:02:41,140
+And I'm going to say, General Information,
+
+38
+00:02:44,060 --> 00:02:46,100
+and then I'm going to add a paragraph.
+
+39
+00:02:49,550 --> 00:02:54,480
+This paragraph text will describe the best
+way to get in touch with me.
+
+40
+00:02:54,480 --> 00:03:01,847
+I'll say, I am not currently looking for
+new design work, but
+
+41
+00:03:01,847 --> 00:03:08,810
+I am available for speaking gigs and
+similar engagements.
+
+42
+00:03:11,510 --> 00:03:18,960
+If you have any questions, please don't
+hesitate to contact me.
+
+43
+00:03:18,960 --> 00:03:21,410
+And of course, you want to go ahead
+
+44
+00:03:21,410 --> 00:03:24,900
+and customize this text to whatever you'd
+like.
+
+45
+00:03:27,290 --> 00:03:31,450
+Let's add another paragraph just to give
+it some separation.
+
+46
+00:03:32,570 --> 00:03:39,514
+And in this paragraph I'm going to say,
+please only use phone contact for urgent
+
+47
+00:03:39,514 --> 00:03:46,130
+inquiries.
+Otherwise, Twitter
+
+48
+00:03:46,130 --> 00:03:53,090
+and email are the best way to reach me.
+
+49
+00:03:53,090 --> 00:03:57,830
+Now the second section is going to start
+off with a H 3 as well.
+
+50
+00:03:58,840 --> 00:04:02,010
+And inside we'll say Contact Details,
+
+51
+00:04:06,460 --> 00:04:09,390
+then I'm going to create an unordered list
+
+52
+00:04:09,390 --> 00:04:12,750
+that will include a few ways to contact
+us.
+
+53
+00:04:12,750 --> 00:04:17,580
+On the unordered list, I'll add the class
+contact info.
+
+54
+00:04:17,580 --> 00:04:20,180
+So let's create that unordered list.
+
+55
+00:04:20,180 --> 00:04:26,110
+And say class, contact-info.
+And just
+
+56
+00:04:26,110 --> 00:04:31,900
+to remind you one more time, this will be
+the first column, and this will the second
+
+57
+00:04:31,900 --> 00:04:35,520
+column, side by side in our desktop
+layout.
+
+58
+00:04:35,520 --> 00:04:38,290
+But in our mobile layout they'll be
+stacked.
+
+59
+00:04:38,290 --> 00:04:42,140
+So these contact details, in our mobile
+layout, will appear just
+
+60
+00:04:42,140 --> 00:04:45,550
+below this general information, and we'll
+see that in a moment.
+
+61
+00:04:46,870 --> 00:04:51,980
+Now let's fill out this unordered list.
+Inside I want three items for
+
+62
+00:04:51,980 --> 00:04:57,030
+phone, email, and Twitter.
+On each item, we'll use different
+
+63
+00:04:57,030 --> 00:05:00,290
+types of lengths, based on the method of
+contact.
+
+64
+00:05:03,720 --> 00:05:08,680
+For phone, I'm going to add the class
+phone to the list item.
+
+65
+00:05:12,630 --> 00:05:14,820
+We'll need these classes later on when
+we're
+
+66
+00:05:14,820 --> 00:05:17,700
+adding icons next to them in our CSS.
+
+67
+00:05:18,780 --> 00:05:21,250
+Next I'm going to create a link with
+
+68
+00:05:21,250 --> 00:05:24,310
+a fake phone number that's just for the
+purposes
+
+69
+00:05:24,310 --> 00:05:27,730
+of this example, but if you feel
+comfortable doing
+
+70
+00:05:27,730 --> 00:05:31,060
+so, you can add your own phone number
+here.
+
+71
+00:05:31,060 --> 00:05:38,120
+So I'm going to say, a href we'll fill in
+href in just a moment.
+
+72
+00:05:38,120 --> 00:05:43,048
+Inside of the link, I'm going to
+
+73
+00:05:43,048 --> 00:05:48,056
+say 555-6425.
+And inside
+
+74
+00:05:48,056 --> 00:05:53,273
+of the href, I can say tel, for telephone,
+
+75
+00:05:53,273 --> 00:05:58,349
+with the colon, and then I'll put the same
+
+76
+00:05:58,349 --> 00:06:03,532
+phone number, 555-6425.
+And save
+
+77
+00:06:03,532 --> 00:06:04,577
+that out.
+
+78
+00:06:04,577 --> 00:06:10,070
+As you can see, this is a different type
+of link than what we've ever used before.
+
+79
+00:06:10,070 --> 00:06:13,930
+We've added the special keyword tel for
+telephone inside
+
+80
+00:06:13,930 --> 00:06:17,840
+of the href attribute followed by the
+phone number.
+
+81
+00:06:17,840 --> 00:06:23,670
+On smart phones this will tell the browser
+that it's a telephone number it can dial.
+
+82
+00:06:23,670 --> 00:06:28,560
+So if you bring up this website on your
+smart phone browser,
+
+83
+00:06:28,560 --> 00:06:33,790
+you can actually tap on this link and it
+will dial this phone number or
+
+84
+00:06:33,790 --> 00:06:38,730
+it will at least present a modal window
+asking you if you'd like to dial the phone
+
+85
+00:06:38,730 --> 00:06:43,795
+number.
+Next, let's add the email length.
+
+86
+00:06:43,795 --> 00:06:50,916
+I'm going to create a new list item, with
+the class, Mail.
+
+87
+00:06:50,916 --> 00:06:53,398
+I'm going to create an anchor element,
+
+88
+00:06:53,398 --> 00:06:56,853
+with a blank href attribute we'll fill out
+in a moment.
+
+89
+00:06:56,853 --> 00:07:01,563
+And I'm going to put in a fake email
+address, nick@example.com.
+
+90
+00:07:03,120 --> 00:07:08,010
+And inside of the href attribute I'm going
+to say
+
+91
+00:07:08,010 --> 00:07:13,024
+mail to, with a colon and then
+
+92
+00:07:13,024 --> 00:07:18,600
+Nick@example.com.
+Similar to the phone
+
+93
+00:07:18,600 --> 00:07:23,960
+number, I've used the keyword mail to.
+This will tell
+
+94
+00:07:23,960 --> 00:07:30,060
+the browser its an email address that the
+use can send mail to.
+
+95
+00:07:30,060 --> 00:07:32,470
+Typically this will open the default email
+
+96
+00:07:32,470 --> 00:07:35,850
+client on the site visitors computer; such
+as,
+
+97
+00:07:35,850 --> 00:07:39,940
+Outlook Express or Apple mail or whatever
+the
+
+98
+00:07:39,940 --> 00:07:44,540
+default mail program is for that
+particular user.
+
+99
+00:07:44,540 --> 00:07:47,010
+This is just an example email address, so
+
+100
+00:07:47,010 --> 00:07:50,630
+be sure to add your own email address
+here.
+
+101
+00:07:50,630 --> 00:07:53,240
+Finally, let's add a Twitter link.
+
+102
+00:07:57,070 --> 00:08:02,770
+I'm going to create a new list item, with
+the class Twitter.
+
+103
+00:08:02,770 --> 00:08:03,490
+And then,
+
+104
+00:08:05,600 --> 00:08:08,230
+I'm going to create an HREF attribute
+
+105
+00:08:08,230 --> 00:08:13,364
+inside of an anchor element, and type
+@nickrp.
+
+106
+00:08:14,520 --> 00:08:16,660
+Now, I'm going to use a slightly
+
+107
+00:08:16,660 --> 00:08:20,840
+different Twitter address than we've used
+previously.
+
+108
+00:08:20,840 --> 00:08:31,229
+It's going to say
+HTTP://twitter.com/intent/tweet
+
+109
+00:08:31,229 --> 00:08:36,392
+with a question mark.
+And then
+
+110
+00:08:36,392 --> 00:08:42,904
+screen_name=nickrp.
+
+111
+00:08:44,920 --> 00:08:49,290
+This Twitter link is a bit different than
+the ones that we've used before, because
+
+112
+00:08:49,290 --> 00:08:53,680
+it allows the site visitor to immediately
+start writing a tweet
+
+113
+00:08:53,680 --> 00:08:58,630
+to us, rather than leading to the Twitter
+profile page.
+
+114
+00:08:58,630 --> 00:09:05,090
+Just be sure to replace the username with
+your own user name instead.
+
+115
+00:09:06,090 --> 00:09:09,470
+Let's refresh the browser to see what this
+looks like.
+
+116
+00:09:11,670 --> 00:09:16,810
+So here, I'm on the Contact page.
+And I've refreshed the browser.
+
+117
+00:09:16,810 --> 00:09:19,940
+Here are our two third-level headlines.
+
+118
+00:09:20,940 --> 00:09:23,710
+Here are the two paragraphs that we've
+added.
+
+119
+00:09:23,710 --> 00:09:27,660
+And finally, here's the unordered list
+with Contact Details.
+
+120
+00:09:29,060 --> 00:09:31,600
+We have a telephone number, which if I
+click
+
+121
+00:09:31,600 --> 00:09:35,300
+in a web browser, isn't actually going to
+do anything.
+
+122
+00:09:35,300 --> 00:09:36,720
+But it will bring up a
+
+123
+00:09:36,720 --> 00:09:40,148
+prompt on Smart Phones, if a user taps
+this.
+
+124
+00:09:40,148 --> 00:09:44,900
+And then nick@example.com will actually
+bring up
+
+125
+00:09:44,900 --> 00:09:48,490
+my email, so I can compose a message.
+
+126
+00:09:48,490 --> 00:09:53,800
+In this case it will bring up gmail,
+because that's my default email client.
+
+127
+00:09:53,800 --> 00:09:58,140
+And then finally, if we click on the
+Twitter link we added
+
+128
+00:09:58,140 --> 00:10:01,950
+here, you'll see that it doesn't bring us
+to the Twitter profile
+
+129
+00:10:01,950 --> 00:10:09,210
+page, rather it brings us to a page where
+we can immediately, type a tweet.
+
+130
+00:10:09,210 --> 00:10:13,790
+I'm going to go back because, I don't have
+any need to tweet to myself.
+
+131
+00:10:14,860 --> 00:10:16,520
+This looks good so far.
+
+132
+00:10:16,520 --> 00:10:18,950
+Now we're ready to add some additional
+styling.
+

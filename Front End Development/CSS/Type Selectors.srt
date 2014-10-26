@@ -1,0 +1,580 @@
+1
+00:00:00,000 --> 00:00:04,050
+[CSS Foundations with Guil Hernandez: Selectors: Deep Dive]
+
+2
+00:00:05,340 --> 00:00:09,610
+Selectors are one of the most important and powerful parts of CSS.
+
+3
+00:00:09,610 --> 00:00:12,310
+They are essentially patterns that allow us 
+
+4
+00:00:12,310 --> 00:00:15,850
+to target HTML elements and apply styles to them.
+
+5
+00:00:16,920 --> 00:00:18,890
+When we define a selector in our style sheet,
+
+6
+00:00:18,890 --> 00:00:21,400
+we're instructing the browser to match 
+
+7
+00:00:21,400 --> 00:00:24,460
+every instance of that selector in the HTML
+
+8
+00:00:24,460 --> 00:00:28,580
+Now, we already saw selectors that work in the previous stage
+
+9
+00:00:28,580 --> 00:00:31,450
+when we created simple selectors to change 
+
+10
+00:00:31,450 --> 00:00:34,700
+the colors of headings, paragraphs, and backgrounds.
+
+11
+00:00:35,630 --> 00:00:40,070
+In this Deep Dive, we'll learn the different ways we can define a selector 
+
+12
+00:00:40,070 --> 00:00:45,700
+as selectors can be defined based on an element's type, its class, or ID name, 
+
+13
+00:00:45,700 --> 00:00:47,910
+or even its position in the document.
+
+14
+00:00:47,910 --> 00:00:51,520
+So first, let's get stated with basic type selectors 
+
+15
+00:00:51,520 --> 00:00:53,580
+then we'll get more specific as we go.
+
+16
+00:00:55,210 --> 00:00:58,860
+So here we have a simple HTML document containing 
+
+17
+00:00:58,860 --> 00:01:03,960
+an h1, h2, and a few paragraph elements
+
+18
+00:01:05,960 --> 00:01:08,960
+and we can see what it's looking like in the browser so far.
+
+19
+00:01:08,960 --> 00:01:14,620
+Besides the default browser styles, no author styles have been applied just yet.
+
+20
+00:01:14,620 --> 00:01:20,820
+So let's add a few styles of our own by first creating a new CSS file.
+
+21
+00:01:20,820 --> 00:01:24,820
+So in our text editor, I'll go ahead and open a new file 
+
+22
+00:01:24,820 --> 00:01:32,410
+and I will save it style.css and save it in the CSS folder.
+
+23
+00:01:34,410 --> 00:01:39,480
+Next, we'll need to link our new CSS file to our HTML document. 
+
+24
+00:01:39,480 --> 00:01:45,520
+So over in our index.html file under the title tag,
+
+25
+00:01:45,520 --> 00:01:54,240
+I will add link rel=stylesheet followed by HREF 
+
+26
+00:01:54,240 --> 00:01:58,000
+and inside, I will add the path to the new style sheets.
+
+27
+00:01:58,000 --> 00:02:00,690
+So we know it's in the CSS directory 
+
+28
+00:02:00,690 --> 00:02:04,110
+and the file name is style.css
+
+29
+00:02:06,110 --> 00:02:11,850
+So, I'll go ahead and save our HTML file and go back into style.css
+
+30
+00:02:11,850 --> 00:02:16,820
+where we'll be creating a few simple styles using CSS properties 
+
+31
+00:02:16,820 --> 00:02:20,650
+and values that you might not be familiar with just yet
+
+32
+00:02:20,650 --> 00:02:23,420
+but don't worry because we'll be covering those properties
+
+33
+00:02:23,420 --> 00:02:28,060
+ and values in greater detail in the values and unit stage.
+
+34
+00:02:28,060 --> 00:02:32,480
+For now, we'll only need to understand how CSS selectors work.
+
+35
+00:02:33,480 --> 00:02:38,740
+So the very first selector we'll cover is called the universal selector. 
+
+36
+00:02:38,740 --> 00:02:45,040
+It's called a universal selector because it selects every element on the page at once
+
+37
+00:02:45,040 --> 00:02:47,250
+and applies the styles we set.
+
+38
+00:02:47,250 --> 00:02:50,990
+The universal selector is a very powerful selector
+
+39
+00:02:50,990 --> 00:02:56,140
+because it takes precedence overall other selectors as we'll soon find out.
+
+40
+00:02:56,140 --> 00:03:02,170
+So to create a universal selector, we simply use an * as our selector
+
+41
+00:03:02,170 --> 00:03:04,940
+followed by a set of curly braces.
+
+42
+00:03:04,940 --> 00:03:08,460
+Inside this curly braces is where we write the properties
+
+43
+00:03:08,460 --> 00:03:12,890
+ and values we'd like to apply universally to our page.
+
+44
+00:03:12,890 --> 00:03:18,690
+So for example, I will start with a margin property and a value of 0
+
+45
+00:03:18,690 --> 00:03:24,550
+and I will follow that with a padding property where I also give it value 0
+
+46
+00:03:24,550 --> 00:03:28,750
+and a color property with the value red.
+
+47
+00:03:28,750 --> 00:03:33,150
+Now in the previous stage, we learned that browsers have 
+
+48
+00:03:33,150 --> 00:03:36,660
+a built in style sheet called the user agent style sheet
+
+49
+00:03:36,660 --> 00:03:42,610
+ that by default, applies padding and margins to the body, headings, 
+
+50
+00:03:42,610 --> 00:03:45,730
+ list, paragraphs, and other elements on the page.
+
+51
+00:03:45,730 --> 00:03:48,940
+By setting the margin and padding to 0, 
+
+52
+00:03:48,940 --> 00:03:52,240
+we're telling the browser to remove all margins 
+
+53
+00:03:52,240 --> 00:03:56,010
+and padding from every element on the page 
+
+54
+00:03:56,010 --> 00:04:01,460
+then change their font color from the default black to red.
+
+55
+00:04:01,460 --> 00:04:05,660
+So let's go ahead and save this file and take a look at it in the browser.
+
+56
+00:04:07,230 --> 00:04:11,440
+When I refresh the browser, we can see how all the padding and margins
+
+57
+00:04:11,440 --> 00:04:16,190
+ have been removed from all heading and paragraph elements on the page
+
+58
+00:04:16,190 --> 00:04:18,620
+and the font color is now red. 
+
+59
+00:04:18,620 --> 00:04:22,830
+Now, because this is a very powerful selector, 
+
+60
+00:04:22,830 --> 00:04:25,300
+we'll need to be careful how we use it.
+
+61
+00:04:25,300 --> 00:04:29,360
+For example, inheritance in CSS values
+
+62
+00:04:29,360 --> 00:04:32,910
+ will not work when we use the universal selector.
+
+63
+00:04:32,910 --> 00:04:35,510
+So we loose that inheritance from parent elements 
+
+64
+00:04:35,510 --> 00:04:37,530
+we discussed in the previous stage
+
+65
+00:04:37,530 --> 00:04:42,230
+because the universal selector trumps any form of inherited styles.
+
+66
+00:04:42,230 --> 00:04:47,790
+Now because of that, we'll need to write a lot of extra CSS for child elements. 
+
+67
+00:04:48,790 --> 00:04:51,130
+So for now, we'll go ahead and remove this
+
+68
+00:04:51,130 --> 00:04:54,510
+ universal selector rule from our style sheet.
+
+69
+00:04:55,400 --> 00:04:59,150
+But in a later video, we'll go over the ways the selector can be useful.
+
+70
+00:05:00,120 --> 00:05:02,650
+So next up, we'll talk about type selectors.
+
+71
+00:05:02,650 --> 00:05:07,940
+A type selector is what we use to select an element type on the page.
+
+72
+00:05:07,940 --> 00:05:10,760
+They're also called element selectors
+
+73
+00:05:10,760 --> 00:05:16,060
+because we only use the elements HMTL tags as the selector.
+
+74
+00:05:16,060 --> 00:05:22,590
+So we can use any of the HTML or HTML5 tags as selectors in our CSS.
+
+75
+00:05:22,590 --> 00:05:28,930
+So for example, if we want to add a background color and padding to our page
+
+76
+00:05:28,930 --> 00:05:35,330
+in our CSS file, we can simply select the body element by typing body 
+
+77
+00:05:35,330 --> 00:05:37,980
+followed by a set of curly braces.
+
+78
+00:05:37,980 --> 00:05:42,700
+Again, inside the curly braces, we can then declare the 
+
+79
+00:05:42,700 --> 00:05:49,670
+background color property and we'll go ahead and give it a color value of light blue.
+
+80
+00:05:51,670 --> 00:05:56,340
+Below that, I will add a padding property with the value of 40 pixels.
+
+81
+00:05:56,340 --> 00:06:01,540
+So when I save this and refresh it in the browser,
+
+82
+00:06:01,540 --> 00:06:07,400
+notice how the background color of our page has changed to light blue 
+
+83
+00:06:07,400 --> 00:06:12,890
+and there is this padding separating the content from the edges of the page.
+
+84
+00:06:12,890 --> 00:06:18,790
+Because the body selector we just wrote instructed the browser to change
+
+85
+00:06:18,790 --> 00:06:24,050
+ the background color from white to light blue and add 40 pixels padding.
+
+86
+00:06:24,050 --> 00:06:31,310
+So again, if we needed to select an add styles to the heading 1 on the page
+
+87
+00:06:31,310 --> 00:06:38,220
+in our style sheet, we'll simply type H1 to select the heading 1 element
+
+88
+00:06:38,220 --> 00:06:43,920
+and inside the curly braces, we can add the properties and values we want to declare.
+
+89
+00:06:43,920 --> 00:06:47,300
+So this time, I will give it a color property 
+
+90
+00:06:47,300 --> 00:06:51,870
+and the color value will be a darker shade of blue.
+
+91
+00:06:51,870 --> 00:06:58,030
+I will also change the font size to 40 pixels.
+
+92
+00:06:58,030 --> 00:07:01,730
+So when I save this and refresh the browser, 
+
+93
+00:07:01,730 --> 00:07:05,710
+we can see how our heading 1 has turned to blue 
+
+94
+00:07:05,710 --> 00:07:09,850
+and the font size has increased to 40 pixels.
+
+95
+00:07:10,850 --> 00:07:16,930
+Next, we'll use another type selector to target the h2 in our page.
+
+96
+00:07:17,930 --> 00:07:25,010
+So back in our style.css file, we'll type h2 to select the h2 element 
+
+97
+00:07:25,010 --> 00:07:28,780
+and inside the curly braces, we will add a color property 
+
+98
+00:07:28,780 --> 00:07:32,450
+and at this time, we'll make the color value a light shade of red.
+
+99
+00:07:32,450 --> 00:07:37,050
+So when we save this and review it in the browser,
+
+100
+00:07:37,050 --> 00:07:40,400
+there we see our heading 2 turned red.
+
+101
+00:07:41,600 --> 00:07:47,270
+Now, let's say we want to select and style every paragraph on the page.
+
+102
+00:07:47,270 --> 00:07:51,030
+Well, we can easily accomplish that with the type selector.
+
+103
+00:07:52,030 --> 00:07:57,960
+So in our style.css file, we'll simply type p to select every paragraph
+
+104
+00:07:57,960 --> 00:08:02,850
+and we will give it a color property with the value white
+
+105
+00:08:02,850 --> 00:08:06,810
+followed by 10 pixels of padding, 
+
+106
+00:08:07,810 --> 00:08:15,250
+and we will add a background color and the value will be blue.
+
+107
+00:08:16,250 --> 00:08:20,820
+Again, don't worry if you don't understand some of these properties just yet
+
+108
+00:08:20,820 --> 00:08:23,620
+because we'll covering them in the next few stages.
+
+109
+00:08:23,620 --> 00:08:29,470
+So when we save our CSS and refresh the browser,
+
+110
+00:08:29,470 --> 00:08:32,610
+we can see how the paragraph type selector 
+
+111
+00:08:32,610 --> 00:08:37,380
+we just created matches every paragraph on the page
+
+112
+00:08:37,380 --> 00:08:39,950
+and they're now styled with the color, padding, 
+
+113
+00:08:39,950 --> 00:08:42,299
+and background properties we defined.
+
+114
+00:08:43,780 --> 00:08:45,930
+We can also combine type selectors
+
+115
+00:08:45,930 --> 00:08:48,980
+to create what are called descendant selectors. 
+
+116
+00:08:48,980 --> 00:08:55,090
+A descendant selector selects an element that is a descendant of another element.
+
+117
+00:08:56,090 --> 00:09:04,690
+So for example, in our HTML file, we can see the span element nested inside the h1.
+
+118
+00:09:04,690 --> 00:09:10,850
+So we can say that the span element is a descendant of the h1.
+
+119
+00:09:10,850 --> 00:09:15,170
+Now, because of this, we create a descendant selector
+
+120
+00:09:15,170 --> 00:09:20,380
+ that only targets the span element inside the h1.
+
+121
+00:09:20,380 --> 00:09:24,470
+To create a descendant selector, we'll need to use 
+
+122
+00:09:24,470 --> 00:09:28,460
+two or more selectors separated by wide space.
+
+123
+00:09:28,460 --> 00:09:33,620
+So in our CSS file, we'll first type h1 to select the heading 1 
+
+124
+00:09:33,620 --> 00:09:38,610
+followed by a space then the span type selector.
+
+125
+00:09:38,610 --> 00:09:42,860
+Inside the curly braces, I'll add a color property 
+
+126
+00:09:42,860 --> 00:09:46,880
+and I'll give it a dark blue color value.
+
+127
+00:09:46,880 --> 00:09:51,810
+So when we save the CSS file and refresh the browser, 
+
+128
+00:09:51,810 --> 00:09:58,330
+we can see that it only affected that span element inside the heading 1
+
+129
+00:09:59,330 --> 00:10:04,960
+In our HTML file, notice that there are other span elements nested inside
+
+130
+00:10:04,960 --> 00:10:10,310
+ the paragraphs and in the heading 2 element that were not selected.
+
+131
+00:10:10,310 --> 00:10:16,280
+Now, if we want to style the span element inside of our paragraphs,
+
+132
+00:10:16,280 --> 00:10:20,680
+all we need to do is create a new descendant selector for that.
+
+133
+00:10:20,680 --> 00:10:25,980
+So in our CSS, we will type p to select all paragraphs
+
+134
+00:10:25,980 --> 00:10:29,270
+followed by a space then span.
+
+135
+00:10:30,270 --> 00:10:34,820
+Next, I will add a color property with the color black 
+
+136
+00:10:34,820 --> 00:10:39,760
+and I will give it font-weight of bold.
+
+137
+00:10:39,760 --> 00:10:44,850
+So I'll save this CSS file and when we refresh the browser, 
+
+138
+00:10:44,850 --> 00:10:49,790
+we can see that the only span element that turned black and bold 
+
+139
+00:10:49,790 --> 00:10:53,450
+are the ones nested inside our paragraphs.
+
+140
+00:10:54,450 --> 00:10:59,470
+Now, if we only want to style the span element inside 
+
+141
+00:10:59,470 --> 00:11:03,400
+our h2 instead of the one up here in the h1,
+
+142
+00:11:03,400 --> 00:11:06,330
+we simply change our selector.
+
+143
+00:11:06,330 --> 00:11:13,640
+So in our CSS, I will simply change h1 to h2
+
+144
+00:11:13,640 --> 00:11:18,830
+and when we save it and refresh the browser, there we go.
+
+145
+00:11:18,830 --> 00:11:24,220
+Now the span in the h2 is the one that turns navy blue.
+

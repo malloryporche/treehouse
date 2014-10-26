@@ -1,0 +1,590 @@
+1
+00:00:04,680 --> 00:00:07,830
+We've coded up our HTML, reset the CSS,
+
+2
+00:00:07,830 --> 00:00:12,000
+added foundational styles, some colors,
+and some typography.
+
+3
+00:00:12,000 --> 00:00:13,160
+I mentioned this earlier.
+
+4
+00:00:13,160 --> 00:00:18,490
+But so far we've only been building the
+styles for the mobile version of our site.
+
+5
+00:00:18,490 --> 00:00:22,000
+Now we're ready to start getting into more
+intermediate techniques.
+
+6
+00:00:22,000 --> 00:00:25,910
+Let's get started by building out our
+image gallery.
+
+7
+00:00:25,910 --> 00:00:29,000
+First, I want to review our HTML.
+
+8
+00:00:29,000 --> 00:00:30,340
+We built our gallery
+
+9
+00:00:30,340 --> 00:00:35,420
+as an unordered list.
+Here, we have the unordered list
+
+10
+00:00:35,420 --> 00:00:40,270
+container with list items inside of it.
+Each list
+
+11
+00:00:40,270 --> 00:00:45,340
+item is composed of a link and inside of
+that link is
+
+12
+00:00:45,340 --> 00:00:50,210
+a image and its caption, there are
+multiple
+
+13
+00:00:50,210 --> 00:00:55,490
+unordered lists on our page so let's add
+an id to this list so
+
+14
+00:00:55,490 --> 00:01:00,730
+we can identify this list in particular.
+I'll call it gallery.
+
+15
+00:01:03,810 --> 00:01:04,440
+Great.
+
+16
+00:01:04,440 --> 00:01:08,630
+Now, let's jump into our CSS after saving
+this file,
+
+17
+00:01:09,750 --> 00:01:13,810
+and let's start building out the styles
+for our gallery.
+
+18
+00:01:13,810 --> 00:01:19,030
+This particular gallery is going to take
+up two columns on our mobile site.
+
+19
+00:01:19,030 --> 00:01:23,760
+Later on, we'll expand it to three columns
+on the desktop layout.
+
+20
+00:01:23,760 --> 00:01:28,720
+But most of the styling we'll need will
+already be complete by that point.
+
+21
+00:01:28,720 --> 00:01:31,070
+We'll select the gallery element in a
+moment.
+
+22
+00:01:31,070 --> 00:01:36,820
+But first we need to add some special
+styling to our images on our site.
+
+23
+00:01:36,820 --> 00:01:41,450
+I'm going to tear off this tab in Google
+Chrome,
+
+24
+00:01:41,450 --> 00:01:45,630
+and expand it so that we can re-size this
+browser window.
+
+25
+00:01:46,640 --> 00:01:50,660
+Now, presently, this is what our site
+looks like
+
+26
+00:01:50,660 --> 00:01:54,050
+when we re-size it so that it's closer to
+
+27
+00:01:54,050 --> 00:01:55,700
+a mobile size.
+
+28
+00:01:55,700 --> 00:01:58,760
+You'll see that we have some positioning
+issues,
+
+29
+00:01:58,760 --> 00:02:03,880
+but most importantly, our images are
+entirely too large.
+
+30
+00:02:03,880 --> 00:02:07,200
+So, that's what we need to fix right now.
+
+31
+00:02:07,200 --> 00:02:10,980
+I'm going to leave the browser window like
+this, because that's the way that
+
+32
+00:02:10,980 --> 00:02:15,880
+we should be looking at it, if we're
+building out the mobile version first.
+
+33
+00:02:15,880 --> 00:02:19,350
+In order to fix our images, we're going to
+give them a max
+
+34
+00:02:19,350 --> 00:02:25,090
+width of 100% in the general section of
+our CSS.
+
+35
+00:02:25,090 --> 00:02:26,590
+So just like this.
+
+36
+00:02:26,590 --> 00:02:32,890
+I'll go right below the anchor element
+styles, and I'll type image,
+
+37
+00:02:34,970 --> 00:02:39,530
+and say, max width 100%.
+
+38
+00:02:39,530 --> 00:02:45,240
+This won't generate any immediately
+obvious changes, but it will become
+
+39
+00:02:45,240 --> 00:02:51,560
+important once we start resizing the list
+items, which contain our images.
+
+40
+00:02:51,560 --> 00:02:56,090
+Basically, this max width of 100% tells
+the
+
+41
+00:02:56,090 --> 00:03:00,120
+images to fill the width of their parent
+container.
+
+42
+00:03:00,120 --> 00:03:05,810
+If the container shrinks down in size,
+then the image will shrink down with it.
+
+43
+00:03:05,810 --> 00:03:09,140
+Without this piece of styling, the images
+would break outside
+
+44
+00:03:09,140 --> 00:03:13,880
+their containers, and we'd get some very
+strange looking pages.
+
+45
+00:03:13,880 --> 00:03:18,200
+Let's style the gallery, so you can see
+how this helps.
+
+46
+00:03:18,200 --> 00:03:24,180
+I'm going to create a new section of our
+CSS called Page Portfolio.
+
+47
+00:03:24,180 --> 00:03:25,220
+That way we'll know
+
+48
+00:03:25,220 --> 00:03:29,340
+that this styling is specific to this page
+
+49
+00:03:29,340 --> 00:03:32,560
+and doesn't really get used on other
+pages.
+
+50
+00:03:32,560 --> 00:03:36,660
+So, I'm going to copy our heading here and
+I'm
+
+51
+00:03:36,660 --> 00:03:40,960
+going to scroll down and paste it just
+below the footer.
+
+52
+00:03:43,170 --> 00:03:46,280
+And like I said previously, I'm going to
+call this page
+
+53
+00:03:49,000 --> 00:03:51,810
+portfolio.
+There we go.
+
+54
+00:03:53,180 --> 00:03:57,340
+And now, we'll select the gallery element
+and apply some styling.
+
+55
+00:03:58,780 --> 00:04:02,460
+So we'll use the id selector, as we've
+done previously.
+
+56
+00:04:03,540 --> 00:04:08,000
+We'll set the margin to zero.
+Set the padding to zero.
+
+57
+00:04:09,100 --> 00:04:14,370
+And set the list style to none.
+The new property here
+
+58
+00:04:14,370 --> 00:04:16,470
+is list style.
+
+59
+00:04:16,470 --> 00:04:21,300
+This will remove any kind of bullet points
+from a list if we set it to none.
+
+60
+00:04:21,300 --> 00:04:26,100
+In this case, we're using an unordered
+list to layout our gallery.
+
+61
+00:04:26,100 --> 00:04:28,420
+So, we don't want the bullet points.
+
+62
+00:04:28,420 --> 00:04:31,850
+Now, let's style the list items.
+
+63
+00:04:31,850 --> 00:04:35,310
+We want them to be in two columns somehow
+and
+
+64
+00:04:35,310 --> 00:04:38,500
+there's many ways that we could do that in
+CSS.
+
+65
+00:04:38,500 --> 00:04:39,430
+One technique
+
+66
+00:04:39,430 --> 00:04:42,380
+is to use a property called float, which
+
+67
+00:04:42,380 --> 00:04:45,800
+will make the elements appear side by
+side.
+
+68
+00:04:45,800 --> 00:04:48,470
+I want you to follow along while I type
+this.
+
+69
+00:04:48,470 --> 00:04:51,140
+Afterwards, I'll explain the code.
+
+70
+00:04:51,140 --> 00:04:56,380
+So, I'm going to select gallery and then
+select the list items
+
+71
+00:04:56,380 --> 00:05:01,454
+inside of the gallery.
+And we're going to say float left.
+
+72
+00:05:01,454 --> 00:05:04,587
+We'll give it a
+
+73
+00:05:04,587 --> 00:05:10,371
+width of 45%, a margin of
+
+74
+00:05:10,371 --> 00:05:16,637
+2.5%, a background color
+
+75
+00:05:16,637 --> 00:05:22,903
+of f5f5f5, and finally, a
+
+76
+00:05:22,903 --> 00:05:29,550
+color of bdc3c7.
+There's a couple of things going on here.
+
+77
+00:05:29,550 --> 00:05:30,310
+First,
+
+78
+00:05:30,310 --> 00:05:34,710
+I'm going to save this and then refresh
+the page
+
+79
+00:05:34,710 --> 00:05:36,730
+so that you can see what this code just
+did.
+
+80
+00:05:40,000 --> 00:05:45,090
+As you can see, our gallery is starting to
+take shape as a two column layout.
+
+81
+00:05:45,090 --> 00:05:45,590
+.
+
+82
+00:05:46,760 --> 00:05:50,490
+And, if we expand this out, it starts to
+even look better at
+
+83
+00:05:50,490 --> 00:05:53,670
+desktop sizes but, there's still more
+improvements
+
+84
+00:05:53,670 --> 00:05:55,330
+that we can do there, later on.
+
+85
+00:05:56,690 --> 00:06:00,590
+First, the big new idea here is the float
+
+86
+00:06:00,590 --> 00:06:05,720
+property, which is a property that allows
+us to position
+
+87
+00:06:05,720 --> 00:06:08,510
+elements in a special way.
+
+88
+00:06:08,510 --> 00:06:14,250
+The idea comes from print design, where an
+image is floated on the page,
+
+89
+00:06:14,250 --> 00:06:20,350
+to the left or the right, and the text
+then flows around that image.
+
+90
+00:06:20,350 --> 00:06:25,570
+On the web, the float property has evolved
+to become extremely versatile.
+
+91
+00:06:25,570 --> 00:06:30,860
+Floating these elements will make them
+appear side by side, rather than stacking
+
+92
+00:06:30,860 --> 00:06:33,570
+on top of each other, like we saw
+previously.
+
+93
+00:06:34,660 --> 00:06:39,300
+Second, I've set their width to 45%.
+
+94
+00:06:39,300 --> 00:06:42,020
+That means, regardless of the size of the
+
+95
+00:06:42,020 --> 00:06:45,570
+browser window, whether it's on a desktop
+or a
+
+96
+00:06:45,570 --> 00:06:50,515
+mobile phone, each image will only ever
+take up
+
+97
+00:06:50,515 --> 00:06:54,510
+45% of the total width of it's parent
+element.
+
+98
+00:06:54,510 --> 00:06:56,460
+So, you can see here
+
+99
+00:06:56,460 --> 00:07:01,870
+how the images are scaling and, no matter
+what size the browser window is,
+
+100
+00:07:01,870 --> 00:07:06,910
+those images take up 45% of the width.
+Since
+
+101
+00:07:06,910 --> 00:07:12,150
+every parent element above the list items
+are not set, they default to 100%.
+
+102
+00:07:12,150 --> 00:07:16,270
+That means that the width of our images
+will
+
+103
+00:07:16,270 --> 00:07:20,220
+be 45% of the total width of the page.
+
+104
+00:07:20,220 --> 00:07:21,790
+45 divides
+
+105
+00:07:21,790 --> 00:07:25,360
+into 100 twice with a remainder of 10.
+
+106
+00:07:25,360 --> 00:07:30,695
+That means we'll have two images floated
+side by side with
+
+107
+00:07:30,695 --> 00:07:36,710
+10% extra room that we can use to create
+space between our images.
+
+108
+00:07:38,080 --> 00:07:43,140
+To create that space and round it up to
+100%,
+
+109
+00:07:43,140 --> 00:07:47,850
+I've used the margin property and set it
+to 2.5%.
+
+110
+00:07:47,850 --> 00:07:53,080
+So, if we go back to the browser window,
+you can see that
+
+111
+00:07:53,080 --> 00:07:58,050
+each image has a margin on each side of
+2.5%.
+
+112
+00:07:58,050 --> 00:08:02,780
+So, in other words, each image has a 5%
+
+113
+00:08:02,780 --> 00:08:07,863
+margin in total.
+There's 2.5 here, 2.5
+
+114
+00:08:07,863 --> 00:08:13,283
+there.
+And then the second image has 2.5 here and
+
+115
+00:08:13,283 --> 00:08:18,392
+2.5 there.
+So if you take 2.5 and
+
+116
+00:08:18,392 --> 00:08:25,550
+multiply it by 1, 2, 3, 4 times.
+That gives you a total of 10%.
+
+117
+00:08:25,550 --> 00:08:31,430
+That will fill the extra 10% of space that
+we had to play with previously.
+
+118
+00:08:31,430 --> 00:08:38,550
+Finally, I've set the background color to
+what will look like a medium gray color.
+
+119
+00:08:38,550 --> 00:08:43,590
+Let's flip back to our website.
+If you look at our website, you'll
+
+120
+00:08:43,590 --> 00:08:48,680
+see that this background color comes
+across for each one of the captions.
+
+121
+00:08:49,740 --> 00:08:54,710
+Finally, I've set the color of our text to
+this gray color here.
+
+122
+00:08:55,810 --> 00:08:58,370
+You won't see that come across really,
+unless
+
+123
+00:08:58,370 --> 00:09:02,570
+any of the captions are unlinked for some
+reason.
+
+124
+00:09:02,570 --> 00:09:03,860
+Rather, what's being displayed
+
+125
+00:09:03,860 --> 00:09:09,350
+here is the color of linked text.
+Which in this case is this green color.
+

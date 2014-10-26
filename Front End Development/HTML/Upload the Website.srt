@@ -1,0 +1,445 @@
+1
+00:00:00,420 --> 00:00:03,370
+We're ready to upload our website to our
+server.
+
+2
+00:00:03,370 --> 00:00:05,840
+In order to do that, we'll need some
+special
+
+3
+00:00:05,840 --> 00:00:10,740
+software that can use what's called the
+SFTP protocol.
+
+4
+00:00:10,740 --> 00:00:13,030
+SFTP can mean a few things.
+
+5
+00:00:13,030 --> 00:00:17,460
+But often, it stands for secure file
+transfer protocol.
+
+6
+00:00:17,460 --> 00:00:18,780
+In other words, we're going to be
+
+7
+00:00:18,780 --> 00:00:21,860
+transferring our files using a secure
+connection.
+
+8
+00:00:23,240 --> 00:00:26,400
+After we pointed our domain to our server
+
+9
+00:00:26,400 --> 00:00:28,740
+we should be able to navigate to our
+domain in
+
+10
+00:00:28,740 --> 00:00:31,890
+a web browser and it should look something
+like this.
+
+11
+00:00:31,890 --> 00:00:36,590
+So if I type in treehousewebsite.com,
+which is the domain I purchased.
+
+12
+00:00:36,590 --> 00:00:39,670
+We can see this Index of text, a
+
+13
+00:00:39,670 --> 00:00:43,700
+CGI bin folder and some information about
+the server.
+
+14
+00:00:43,700 --> 00:00:48,380
+We want to replace this with our website
+that we spent so long creating.
+
+15
+00:00:48,380 --> 00:00:50,640
+So, let's get started.
+
+16
+00:00:50,640 --> 00:00:51,900
+In order to do that,
+
+17
+00:00:51,900 --> 00:00:54,150
+we need to first download some FTP
+
+18
+00:00:54,150 --> 00:00:58,070
+software to transfer our files to the
+server.
+
+19
+00:00:58,070 --> 00:01:04,060
+I'm going to use FTP software called
+Cyberduck, available at Cyberduck.io.
+
+20
+00:01:04,060 --> 00:01:06,640
+You can also download it from the Mac App
+Store,
+
+21
+00:01:06,640 --> 00:01:11,410
+but there are download links here for
+Windows and for Mac.
+
+22
+00:01:11,410 --> 00:01:16,620
+So be sure to choose the download link
+appropriate for your operating system.
+
+23
+00:01:16,620 --> 00:01:16,990
+I'm going
+
+24
+00:01:16,990 --> 00:01:20,590
+to choose the Mac download, and this might
+be a good time
+
+25
+00:01:20,590 --> 00:01:23,480
+to pause the video while you wait for the
+download to finish.
+
+26
+00:01:24,520 --> 00:01:28,580
+And after it's done, I can choose Show in
+Finder.
+
+27
+00:01:30,040 --> 00:01:34,190
+Which should be Windows Explorer, if
+you're on Windows.
+
+28
+00:01:34,190 --> 00:01:39,630
+I can then double-click the zip file and
+it will unzip CyberDuck.
+
+29
+00:01:39,630 --> 00:01:43,420
+And now, I can drag it to my Applications
+folder.
+
+30
+00:01:43,420 --> 00:01:46,420
+Again, this installation process will be
+slightly different
+
+31
+00:01:46,420 --> 00:01:50,390
+on Windows, but it should be the same
+principle.
+
+32
+00:01:50,390 --> 00:01:53,510
+Once you've installed CyberDuck, you can
+open it up.
+
+33
+00:01:54,710 --> 00:01:58,070
+And if you're on a Mac like me, you might
+see a
+
+34
+00:01:58,070 --> 00:02:01,740
+window that looks like this, asking if you
+really wanna open it.
+
+35
+00:02:01,740 --> 00:02:03,760
+Just go ahead and click Open.
+
+36
+00:02:03,760 --> 00:02:08,060
+And the first time you open Cyberduck it
+should look something like this.
+
+37
+00:02:08,060 --> 00:02:09,070
+Your bookmarks
+
+38
+00:02:09,070 --> 00:02:13,040
+might be slightly different than mine but
+that's okay.
+
+39
+00:02:13,040 --> 00:02:19,160
+Just click Open Connection and then we
+need to put in our SFTP credentials.
+
+40
+00:02:19,160 --> 00:02:25,120
+So instead of file transfer protocol,
+choose SFTP from the drop down.
+
+41
+00:02:25,120 --> 00:02:29,930
+Which means SSH file transfer protocol,
+which is sometimes also called
+
+42
+00:02:29,930 --> 00:02:35,330
+secure file transfer protocol because
+indeed it is more secure than FTP.
+
+43
+00:02:35,330 --> 00:02:40,860
+So choose SFTP and then it will ask us to
+put in a server.
+
+44
+00:02:40,860 --> 00:02:46,470
+If you recall, we received an email
+earlier from student hosting with the
+
+45
+00:02:46,470 --> 00:02:52,650
+FTP address, as well as our username, and
+just below this is my password.
+
+46
+00:02:52,650 --> 00:02:56,080
+But I don't want to reveal my password,
+for obvious reasons, you
+
+47
+00:02:56,080 --> 00:03:00,400
+should use your own username and password
+as well as your own domain.
+
+48
+00:03:00,400 --> 00:03:00,830
+So
+
+49
+00:03:00,830 --> 00:03:05,600
+I'm going to put in my FTP address, which
+in this case
+
+50
+00:03:05,600 --> 00:03:10,037
+happens to be my domain.
+Then I need to fill in the port number.
+
+51
+00:03:10,037 --> 00:03:16,097
+In this case, the port number is 18765.
+
+52
+00:03:16,097 --> 00:03:21,620
+Again, that's 18765.
+Then type in your username.
+
+53
+00:03:22,710 --> 00:03:25,620
+My username is treehous without the e,
+
+54
+00:03:25,620 --> 00:03:30,560
+because the server abbreviates it to eight
+characters in this particular case.
+
+55
+00:03:30,560 --> 00:03:35,000
+And then I'm going to put in my password,
+and then I'll click Connect.
+
+56
+00:03:35,000 --> 00:03:37,580
+You might see a dialogue box that looks
+like this.
+
+57
+00:03:37,580 --> 00:03:42,120
+It says, unknown host key for your domain.
+
+58
+00:03:42,120 --> 00:03:44,630
+That's perfectly fine, we want to allow
+this,
+
+59
+00:03:44,630 --> 00:03:48,250
+and you might want to check always allow
+this.
+
+60
+00:03:48,250 --> 00:03:50,640
+And when you first log into your server it
+should
+
+61
+00:03:50,640 --> 00:03:52,320
+look something like this.
+
+62
+00:03:52,320 --> 00:03:56,450
+We want to navigate to the www folder
+because that's
+
+63
+00:03:56,450 --> 00:04:00,490
+where our website will live on the World
+Wide Web.
+
+64
+00:04:00,490 --> 00:04:03,300
+Let's double click that folder, and here's
+
+65
+00:04:03,300 --> 00:04:07,020
+that CGI bin folder that we saw
+previously.
+
+66
+00:04:07,020 --> 00:04:13,330
+We don't need this folder for our project,
+so right click on it and choose delete.
+
+67
+00:04:14,430 --> 00:04:17,180
+And then click delete to confirm.
+
+68
+00:04:17,180 --> 00:04:22,660
+And now, we need to upload our files to
+this window here.
+
+69
+00:04:22,660 --> 00:04:23,740
+How do we do that?
+
+70
+00:04:23,740 --> 00:04:29,000
+Well let's go back to our work space and
+from here we can
+
+71
+00:04:29,000 --> 00:04:34,230
+choose File > Download Workspace.
+And it
+
+72
+00:04:34,230 --> 00:04:39,500
+will download it to a zip file I can show
+this in the Finder.
+
+73
+00:04:41,640 --> 00:04:44,500
+Double click it to unzip it and when you
+unzip
+
+74
+00:04:44,500 --> 00:04:49,180
+the file, it should give you a folder
+called download.
+
+75
+00:04:49,180 --> 00:04:54,130
+We don't want to just copy this download
+folder directly to CyberDuck.
+
+76
+00:04:54,130 --> 00:04:59,660
+Rather we want to open it up and only copy
+its contents.
+
+77
+00:04:59,660 --> 00:05:02,200
+So don't just drag this over to CyberDuck.
+
+78
+00:05:02,200 --> 00:05:06,040
+Make sure you grab the contents of the
+download folder.
+
+79
+00:05:07,590 --> 00:05:12,880
+And then you can drag and drop it over to
+CyberDuck.
+
+80
+00:05:12,880 --> 00:05:20,670
+So I'll drag the contents of the Download
+folder over to my WWW folder in CyberDuck.
+
+81
+00:05:20,670 --> 00:05:26,680
+Again I need to click Allow for the host
+key fingerprint, and then it
+
+82
+00:05:26,680 --> 00:05:31,900
+will log in and start uploading my files.
+Once the upload has completed,
+
+83
+00:05:33,600 --> 00:05:37,960
+I can click on my website, refresh the
+page, and as
+
+84
+00:05:37,960 --> 00:05:40,880
+you can see our site is now live on the
+web.
+
+85
+00:05:42,500 --> 00:05:46,210
+I can click on these images and they'll
+enlarge just like you'd expect.
+
+86
+00:05:48,570 --> 00:05:51,440
+And I can also click around to the
+different
+
+87
+00:05:51,440 --> 00:05:56,500
+pages and they're also there just as you'd
+expect.
+
+88
+00:05:56,500 --> 00:06:01,160
+So now anyone in the world can type in
+your custom domain and see your website.
+
+89
+00:06:02,530 --> 00:06:05,680
+Our website is now live on the web and
+anyone with an
+
+90
+00:06:05,680 --> 00:06:09,970
+internet connection can type the address
+into a browser and access it.
+
+91
+00:06:09,970 --> 00:06:13,810
+There's still a few more things you should
+know about making basic
+
+92
+00:06:13,810 --> 00:06:16,730
+website before we move on to a more
+advanced material.
+
+93
+00:06:16,730 --> 00:06:18,020
+But we'll cover that next.
+

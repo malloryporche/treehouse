@@ -1,0 +1,380 @@
+1
+00:00:00,000 --> 00:00:05,640
+Selector groups are CSS rules containing 2 or more comma separated selectors
+
+2
+00:00:05,640 --> 00:00:07,930
+that shared the same properties and values.
+
+3
+00:00:07,930 --> 00:00:12,640
+So we give the same styles to several types of selectors all at once.
+
+4
+00:00:13,200 --> 00:00:17,180
+Doing this minimizes our CSS and makes it more maintainable 
+
+5
+00:00:17,180 --> 00:00:20,270
+because we're not unnecessarily repeating lines of code.
+
+6
+00:00:20,270 --> 00:00:22,220
+Let's find out how.
+
+7
+00:00:23,220 --> 00:00:28,200
+So here we have an HTML document containing 3 DIVs
+
+8
+00:00:28,200 --> 00:00:30,590
+each with a different class.
+
+9
+00:00:30,590 --> 00:00:34,880
+So here we have a square, circle, and ellipse.
+
+10
+00:00:35,630 --> 00:00:42,640
+Over in our style.css file, I've already created a CSS rule for each selector
+
+11
+00:00:42,640 --> 00:00:47,550
+where I've defined a few styles to set the shape of each element.
+
+12
+00:00:48,160 --> 00:00:50,750
+Again, don't worry if you're not familiar 
+
+13
+00:00:50,750 --> 00:00:54,330
+with many of these properties and values just yet
+
+14
+00:00:54,330 --> 00:00:57,230
+because we'll be covering them throughout this Deep Dive.
+
+15
+00:00:57,230 --> 00:01:02,200
+For this video, you'll simply need to understand how grouping selectors
+
+16
+00:01:02,200 --> 00:01:07,800
+can help us keep our CSS to a minimum and make things more maintainable for us.
+
+17
+00:01:08,720 --> 00:01:13,810
+In the browser, we can see each shape that was defined in the style sheet.
+
+18
+00:01:13,810 --> 00:01:18,640
+So here we have the square, the circle, and the ellipse.
+
+19
+00:01:20,020 --> 00:01:23,860
+In our CSS file, notice how each of these rules 
+
+20
+00:01:23,860 --> 00:01:26,980
+have certain CSS properties in common.
+
+21
+00:01:26,980 --> 00:01:31,620
+They share certain styles in order to define their shapes.
+
+22
+00:01:32,120 --> 00:01:38,800
+So for example, all 3 rules have the same exact value for display 
+
+23
+00:01:38,800 --> 00:01:43,380
+with margin and background color.
+
+24
+00:01:43,380 --> 00:01:50,840
+The circle and ellipse selectors also share the same border, radius, values.
+
+25
+00:01:50,840 --> 00:01:55,790
+So we're repeating a lot of CSS in these 3 rules.
+
+26
+00:01:55,790 --> 00:02:01,680
+There's a common practice in CSS or in web development in general called dry
+
+27
+00:02:02,680 --> 00:02:05,960
+which stands for don't repeat yourself
+
+28
+00:02:05,960 --> 00:02:10,590
+and the main idea is to avoid repeating the same bits of code.
+
+29
+00:02:11,570 --> 00:02:16,910
+So if we have code that is repeated multiple times throughout the style sheet
+
+30
+00:02:16,910 --> 00:02:24,540
+like we have in our 3 selectors here, it's a good idea to refactor the CSS 
+
+31
+00:02:24,540 --> 00:02:29,770
+so that each property and value pair is only defined one time.
+
+32
+00:02:29,770 --> 00:02:31,420
+I'll show what I mean.
+
+33
+00:02:32,420 --> 00:02:38,900
+So the idea with dry is to group repeated CSS properties together.
+
+34
+00:02:38,900 --> 00:02:45,160
+So we know that all 3 rules share the same values for display 
+
+35
+00:02:45,160 --> 00:02:48,420
+with margin and background color. 
+
+36
+00:02:48,420 --> 00:02:57,440
+So what we'll do is add the circle and ellipse class selectors to this first rule.
+
+37
+00:02:57,440 --> 00:03:03,100
+Even though the ellipse rule doesn't share the same height property 
+
+38
+00:03:03,100 --> 00:03:07,050
+as we can see here it has a height of 120 pixels, 
+
+39
+00:03:07,050 --> 00:03:10,860
+we'll still add it to this top rule because we'll modify 
+
+40
+00:03:10,860 --> 00:03:13,880
+the height in the ellipse rule so it's fine.
+
+41
+00:03:13,880 --> 00:03:21,570
+So up here, we'll go ahead and add a coma followed by circle, 
+
+42
+00:03:21,570 --> 00:03:26,290
+then another coma and we'll type ellipse.
+
+43
+00:03:26,290 --> 00:03:32,580
+It's important that we add the coma between every selector we're grouping 
+
+44
+00:03:32,580 --> 00:03:35,100
+except for the very last one.
+
+45
+00:03:35,100 --> 00:03:39,320
+Otherwise, the entire rule will be ignored by the browser.
+
+46
+00:03:40,310 --> 00:03:43,640
+So now we can go ahead and remove those repeated 
+
+47
+00:03:43,640 --> 00:03:47,990
+properties from the circle and ellipse selectors 
+
+48
+00:03:47,990 --> 00:03:51,400
+because they're already defined in the top rule.
+
+49
+00:03:56,290 --> 00:04:00,950
+So, next, we can group circle and ellipse into a selector 
+
+50
+00:04:00,950 --> 00:04:05,070
+since they both share the same border radius value
+
+51
+00:04:05,070 --> 00:04:08,830
+which simply sets the rounded corners and circular shape.
+
+52
+00:04:08,830 --> 00:04:16,140
+So I'll go ahead and add a coma after circle then type ellipse.
+
+53
+00:04:17,250 --> 00:04:21,860
+So now, we can go ahead and remove the border radius decoration from
+
+54
+00:04:21,860 --> 00:04:28,000
+ the ellipse rule and leave the modified height of 120 pixels.
+
+55
+00:04:28,000 --> 00:04:31,950
+Okay, so we'll go ahead and save the style sheet
+
+56
+00:04:31,950 --> 00:04:34,950
+ and I'll bring up the Chrome browser.
+
+57
+00:04:36,070 --> 00:04:39,320
+When I refresh it, we can see that nothing has changed.
+
+58
+00:04:39,320 --> 00:04:41,960
+Everything looks exactly the same
+
+59
+00:04:41,960 --> 00:04:47,300
+except that our CSS is now much cleaner or drier.
+
+60
+00:04:47,300 --> 00:04:54,570
+We can actually take things a step further and turn these CSS rules into modules
+
+61
+00:04:54,570 --> 00:04:59,440
+ or components that can be reused anywhere in our HTML
+
+62
+00:04:59,440 --> 00:05:01,420
+I'll show you what I mean by that.
+
+63
+00:05:01,420 --> 00:05:08,470
+So instead of the finding, 3 separate selectors for this top rule, 
+
+64
+00:05:08,470 --> 00:05:11,990
+we can make this one CSS class selector. 
+
+65
+00:05:11,990 --> 00:05:16,050
+We'll need to give it a new class name and since class name should 
+
+66
+00:05:16,050 --> 00:05:20,610
+always be meaningful and clearly communicate what they do, 
+
+67
+00:05:20,610 --> 00:05:23,670
+I'll go ahead and name this one base
+
+68
+00:05:23,670 --> 00:05:28,200
+ because it defines the base styles for our shapes.
+
+69
+00:05:31,200 --> 00:05:35,180
+Next, we can do the same thing for the second selector group
+
+70
+00:05:35,180 --> 00:05:42,670
+this time we'll name it radius since it defines the border radius of the shape.
+
+71
+00:05:43,630 --> 00:05:46,720
+We can keep the ellipse selector since it's defining
+
+72
+00:05:46,720 --> 00:05:50,250
+ the elliptical shape with it's smaller height value.
+
+73
+00:05:51,520 --> 00:05:58,140
+So I'll save the CSS file and we'll go over to our index.html file 
+
+74
+00:05:58,140 --> 00:06:01,960
+So we know that classes are reusable and that 
+
+75
+00:06:01,960 --> 00:06:04,750
+an element can have more than one class. 
+
+76
+00:06:04,750 --> 00:06:09,360
+So what we'll need to do next is replace these classes 
+
+77
+00:06:09,360 --> 00:06:12,520
+with the new selectors we just created.
+
+78
+00:06:12,520 --> 00:06:16,610
+We'll sort of plug those little modules in wherever necessary. 
+
+79
+00:06:16,610 --> 00:06:22,240
+So first, we'll replace each class with base.
+
+80
+00:06:22,240 --> 00:06:26,960
+Let's go ahead and copy paste this in here.
+
+81
+00:06:30,960 --> 00:06:34,250
+So I'll save this and in the browser when we refresh it, 
+
+82
+00:06:34,250 --> 00:06:37,180
+we get 3 squares for all 3 
+
+83
+00:06:37,180 --> 00:06:40,700
+because a square is the base shape for styles.
+
+84
+00:06:40,700 --> 00:06:46,590
+So back in our CSS, I'll go ahead and plug in the radius class 
+
+85
+00:06:46,590 --> 00:06:51,470
+for our circle element in order to add the border radius.
+
+86
+00:06:51,470 --> 00:06:55,120
+So below this in our elliptical element, 
+
+87
+00:06:55,120 --> 00:07:01,610
+we'll also need to add the radius class since it does need the border radius value
+
+88
+00:07:01,610 --> 00:07:06,850
+then we'll need to add the ellipse class to modify the type.
+
+89
+00:07:07,920 --> 00:07:10,650
+So I'll go ahead and save the HTML file.
+
+90
+00:07:11,740 --> 00:07:13,800
+When we review it in the browser, we can see how
+
+91
+00:07:13,800 --> 00:07:17,340
+ everything looks and works exactly the same.
+
+92
+00:07:18,340 --> 00:07:24,440
+but now our CSS is much more efficient and maintainable 
+
+93
+00:07:24,440 --> 00:07:27,650
+compared to the CSS we started with.
+
+94
+00:07:28,530 --> 00:07:31,090
+So as we can see here in our original CSS file, 
+
+95
+00:07:31,090 --> 00:07:36,470
+we've significantly reduced the lines of CSS code in our style sheet.
+

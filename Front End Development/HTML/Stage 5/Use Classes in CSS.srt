@@ -1,0 +1,373 @@
+1
+00:00:00,540 --> 00:00:04,140
+Now, there's a few more things we should
+do for our nav links.
+
+2
+00:00:04,140 --> 00:00:08,320
+Specifically, we should make it obvious
+which page the visitor
+
+3
+00:00:08,320 --> 00:00:14,540
+is currently on, by selecting and
+highlighting the current nav link.
+
+4
+00:00:14,540 --> 00:00:17,820
+We'll do this by jumping back into our
+mark up.
+
+5
+00:00:17,820 --> 00:00:24,300
+So we'll go into our html, here.
+And we'll add an attribute called a class.
+
+6
+00:00:24,300 --> 00:00:25,570
+Now, I just mentioned a
+
+7
+00:00:25,570 --> 00:00:30,640
+class, but I didn't explain what it is.
+So a class is similar to
+
+8
+00:00:30,640 --> 00:00:35,670
+an id, but the difference is that you can
+have multiples of a same class
+
+9
+00:00:35,670 --> 00:00:40,620
+on a page.
+All ids however, must be unique and
+
+10
+00:00:40,620 --> 00:00:45,710
+cannot be repeated on a single page.
+So, let's go ahead and add that
+
+11
+00:00:45,710 --> 00:00:51,280
+class and I'm going to add it to
+index.html or
+
+12
+00:00:51,280 --> 00:00:56,120
+the portfolio link here, because that's
+the page that we're currently on.
+
+13
+00:00:56,120 --> 00:01:02,920
+And I'm going to say class and I'm going
+to apply the class selected.
+
+14
+00:01:02,920 --> 00:01:06,550
+Now, just like ids, this can be anything
+you want.
+
+15
+00:01:06,550 --> 00:01:11,830
+This isn't a predefined class.
+This is just a class I made up.
+
+16
+00:01:11,830 --> 00:01:17,080
+So we'll need to apply some styling to
+match it in our CSS.
+
+17
+00:01:17,080 --> 00:01:18,760
+We've could have used an id in
+
+18
+00:01:18,760 --> 00:01:22,130
+this particular instance, but adding a
+class will
+
+19
+00:01:22,130 --> 00:01:25,130
+give us greater flexibility in case
+there's a
+
+20
+00:01:25,130 --> 00:01:30,720
+strange navigational situation where we
+want multiple selections.
+
+21
+00:01:30,720 --> 00:01:35,350
+In this case, we've applied the selected
+class to our homepage link.
+
+22
+00:01:35,350 --> 00:01:39,710
+This will indicate to the site visitor
+which page they're currently on.
+
+23
+00:01:39,710 --> 00:01:42,540
+So, let's save that and then jump into
+
+24
+00:01:42,540 --> 00:01:47,270
+our CSS, and utilize this class.
+So,
+
+25
+00:01:47,270 --> 00:01:52,340
+I'm going to create a new rule here, and
+say nav
+
+26
+00:01:52,340 --> 00:01:57,618
+a, and then apply the class.
+And to do that we use dots.
+
+27
+00:01:57,618 --> 00:02:03,470
+I'll say .selected
+
+28
+00:02:03,470 --> 00:02:08,340
+and then we'll open up the rule here.
+So, basically any
+
+29
+00:02:08,340 --> 00:02:12,430
+anchor element that's inside of our nav.
+That
+
+30
+00:02:12,430 --> 00:02:16,660
+has the class selected applied to it.
+We'll get
+
+31
+00:02:16,660 --> 00:02:20,710
+these style declarations.
+So, we're just going
+
+32
+00:02:20,710 --> 00:02:25,020
+to apply a color here, and I'm going to
+type out a new color.
+
+33
+00:02:26,410 --> 00:02:34,100
+And the value will be 32 for red, 67 for
+the green and
+
+34
+00:02:34,100 --> 00:02:38,300
+3F for the blue.
+So RGB.
+
+35
+00:02:38,300 --> 00:02:44,440
+Now, you've seen a few hexadecimal colors
+so far, so without hovering over
+
+36
+00:02:44,440 --> 00:02:49,030
+this, I want you to try and guess what
+this color might be.
+
+37
+00:02:49,030 --> 00:02:50,330
+Have you guessed it?
+
+38
+00:02:50,330 --> 00:02:56,170
+I'm going to hover over.
+And guessed dark green, that's correct.
+
+39
+00:02:56,170 --> 00:03:00,890
+It's very similar to our other colors that
+we've been applying previously.
+
+40
+00:03:00,890 --> 00:03:04,240
+So once again, just to review, if there's
+an anchor element
+
+41
+00:03:04,240 --> 00:03:09,530
+with the class selected applied, it will
+get this dark green color.
+
+42
+00:03:09,530 --> 00:03:12,070
+Want to also apply this dark green color
+to
+
+43
+00:03:12,070 --> 00:03:17,220
+the hover state, which is another
+pseudoclass similar to visited.
+
+44
+00:03:17,220 --> 00:03:23,070
+So, let's go ahead and break apart this
+selector into two selectors.
+
+45
+00:03:23,070 --> 00:03:26,060
+And say nav anchor and then
+
+46
+00:03:26,060 --> 00:03:31,770
+apply the pseudoclass, hover.
+So any time we hover
+
+47
+00:03:31,770 --> 00:03:37,890
+over this link with our cursor, it will
+change to this particular color.
+
+48
+00:03:37,890 --> 00:03:38,760
+What does that mean?
+
+49
+00:03:38,760 --> 00:03:41,090
+Well, let's save this and go back to our
+
+50
+00:03:41,090 --> 00:03:44,550
+preview and refresh, and see what it looks
+like.
+
+51
+00:03:45,810 --> 00:03:48,230
+As you can see the portfolio text is
+
+52
+00:03:48,230 --> 00:03:51,680
+a darker color now and that's because the
+selected
+
+53
+00:03:51,680 --> 00:03:56,920
+class has been applied.
+And, if I hover my cursor over the other
+
+54
+00:03:56,920 --> 00:04:02,930
+links here, you'll see that the hover
+state activates and changes the color.
+
+55
+00:04:02,930 --> 00:04:04,400
+Pretty cool.
+
+56
+00:04:04,400 --> 00:04:06,360
+The last thing I want to style is the
+
+57
+00:04:06,360 --> 00:04:11,040
+background color and text color of our
+body element.
+
+58
+00:04:11,040 --> 00:04:15,020
+Which basically encapsulates the entire
+website.
+
+59
+00:04:15,020 --> 00:04:17,350
+We'll set the background to white and
+
+60
+00:04:17,350 --> 00:04:21,836
+the text color to grey.
+That will make the text feel a
+
+61
+00:04:21,836 --> 00:04:26,475
+little less harsh because it will have
+slightly lower contrast.
+
+62
+00:04:26,475 --> 00:04:31,623
+So, let's switch back to our CSS and I'll
+
+63
+00:04:31,623 --> 00:04:36,771
+scroll down here, I'm gonna type body and
+
+64
+00:04:36,771 --> 00:04:42,385
+then I'm gonna say, background color.
+And I set
+
+65
+00:04:42,385 --> 00:04:46,385
+it to white, of course this is white by
+default, but we want
+
+66
+00:04:46,385 --> 00:04:51,590
+to make sure that no other styling
+overrides that for some strange reason.
+
+67
+00:04:51,590 --> 00:04:54,514
+We want to make absolutely sure that our
+background
+
+68
+00:04:54,514 --> 00:04:56,807
+color is the color that we want it to be.
+
+69
+00:04:56,807 --> 00:05:02,040
+And then I'm gonna set the text color
+using the color property And I'm going to
+
+70
+00:05:02,040 --> 00:05:07,400
+apply another shorthand hexidecimal value.
+Now once again I want
+
+71
+00:05:07,400 --> 00:05:10,990
+you to try and guess what this color is
+going to be.
+
+72
+00:05:10,990 --> 00:05:13,170
+And it's going to be this grey color.
+
+73
+00:05:13,170 --> 00:05:20,140
+So let's go ahead and save that, switch
+over to our preview and refresh.
+
+74
+00:05:20,140 --> 00:05:25,570
+And if we scroll down the page here to
+where we have some text, you can see that
+
+75
+00:05:25,570 --> 00:05:32,410
+it is now this light grey color.
+Those are most of the colors that we'll
+
+76
+00:05:32,410 --> 00:05:34,010
+use on our website.
+
+77
+00:05:34,010 --> 00:05:37,150
+Later on, we'll add color in a few more
+places.
+
+78
+00:05:37,150 --> 00:05:39,460
+Before we continue, let's review what
+we've learned.
+

@@ -1,0 +1,916 @@
+1
+00:00:01,220 --> 00:00:03,220
+[Deep Dive]
+
+2
+00:00:03,220 --> 00:00:06,050
+[Web Typography: Responsive Text and Vertical Rhythm Part 1 with Guil Hernandez]
+
+3
+00:00:06,600 --> 00:00:08,140
+[Guil Hernandez]: As we've just learned, 
+
+4
+00:00:08,140 --> 00:00:11,160
+the web has caught up with typography in a remarkable way,
+
+5
+00:00:11,160 --> 00:00:14,600
+and it has become a rapidly evolving area of CSS.
+
+6
+00:00:14,600 --> 00:00:16,100
+But good web typography
+
+7
+00:00:16,100 --> 00:00:18,470
+is also knowing when to be flexible.
+
+8
+00:00:18,470 --> 00:00:20,970
+By default, text is fluid.
+
+9
+00:00:20,970 --> 00:00:23,140
+So, depending on our approach,
+
+10
+00:00:23,140 --> 00:00:26,080
+responsive typography can be easily achieved,
+
+11
+00:00:26,080 --> 00:00:28,700
+and there are many CSS features and tools
+
+12
+00:00:28,700 --> 00:00:31,350
+that can help us maintain a consistent baseline,
+
+13
+00:00:31,350 --> 00:00:33,320
+make a font size flexible, 
+
+14
+00:00:33,320 --> 00:00:35,840
+or respond to different viewport sizes. 
+
+15
+00:00:35,840 --> 00:00:37,480
+So let's get started and learn how
+
+16
+00:00:37,480 --> 00:00:40,280
+we can make our text look great in any context. 
+
+17
+00:00:41,070 --> 00:00:43,890
+These days, there seems to be countless combinations
+
+18
+00:00:43,890 --> 00:00:45,790
+of devices, operating systems, 
+
+19
+00:00:45,790 --> 00:00:47,900
+and screen sizes and resolutions
+
+20
+00:00:47,900 --> 00:00:50,000
+that can render text differently.
+
+21
+00:00:50,000 --> 00:00:53,140
+Some differences are more subtle than others. 
+
+22
+00:00:53,140 --> 00:00:55,410
+Although text is naturally fluid, 
+
+23
+00:00:55,410 --> 00:00:59,370
+it's not exactly a one-size-fits-all solution. 
+
+24
+00:00:59,370 --> 00:01:02,420
+For example, a heading may look great
+
+25
+00:01:02,420 --> 00:01:04,959
+and proportionately sized
+
+26
+00:01:04,959 --> 00:01:07,210
+on a desktop browser, 
+
+27
+00:01:07,210 --> 00:01:09,570
+but look entirely different on a tablet
+
+28
+00:01:09,570 --> 00:01:12,090
+or mobile device. 
+
+29
+00:01:12,090 --> 00:01:14,150
+The same can happen with body text,
+
+30
+00:01:14,150 --> 00:01:16,810
+as font sizes, line length, and line height
+
+31
+00:01:16,810 --> 00:01:18,800
+may start losing their rhythm
+
+32
+00:01:18,800 --> 00:01:20,940
+ and balance proportions
+
+33
+00:01:20,940 --> 00:01:22,760
+which can ultimately lead
+
+34
+00:01:22,760 --> 00:01:25,510
+to illegible and unreadable text. 
+
+35
+00:01:25,510 --> 00:01:28,590
+We need to consider how our text will look
+
+36
+00:01:28,590 --> 00:01:30,880
+in most contexts. 
+
+37
+00:01:30,880 --> 00:01:33,870
+Are the word shapes still enticing to the reader?
+
+38
+00:01:33,870 --> 00:01:36,730
+Is the typographic color still present?
+
+39
+00:01:36,730 --> 00:01:38,280
+Well the good news is
+
+40
+00:01:38,280 --> 00:01:41,690
+that responsive or adaptive typography
+
+41
+00:01:41,690 --> 00:01:44,670
+isn't all that difficult to achieve. 
+
+42
+00:01:44,670 --> 00:01:46,170
+We just need to take some time
+
+43
+00:01:46,170 --> 00:01:49,510
+to think through how our text should respond
+
+44
+00:01:49,510 --> 00:01:51,300
+to changes in screen size 
+
+45
+00:01:51,300 --> 00:01:53,600
+and then implement those changes. 
+
+46
+00:01:53,600 --> 00:01:55,450
+So let's go over a simple example
+
+47
+00:01:55,450 --> 00:01:58,850
+we can apply to just about any project. 
+
+48
+00:01:58,850 --> 00:02:01,960
+Here we have a simple, one-column
+
+49
+00:02:01,960 --> 00:02:03,200
+text layout 
+
+50
+00:02:03,200 --> 00:02:06,740
+with a Main Title heading
+
+51
+00:02:06,740 --> 00:02:09,570
+and a few subheadings.
+
+52
+00:02:09,570 --> 00:02:12,020
+So far, the layout looks pretty good,
+
+53
+00:02:12,020 --> 00:02:14,370
+but there is much more we can do
+
+54
+00:02:14,370 --> 00:02:16,100
+to enhance the text 
+
+55
+00:02:16,100 --> 00:02:18,200
+by improving readability
+
+56
+00:02:18,200 --> 00:02:20,240
+and the vertical spacing. 
+
+57
+00:02:20,240 --> 00:02:22,070
+Currently, our line lengths
+
+58
+00:02:22,070 --> 00:02:25,180
+are fixed, and the font sizes are set
+
+59
+00:02:25,180 --> 00:02:27,210
+in pixels. 
+
+60
+00:02:27,210 --> 00:02:30,130
+So first, let's set our font sizes
+
+61
+00:02:30,130 --> 00:02:33,890
+ to relative em units so that they scale relative
+
+62
+00:02:33,890 --> 00:02:36,210
+to the base font size. 
+
+63
+00:02:36,210 --> 00:02:38,050
+I want to change the body text
+
+64
+00:02:38,050 --> 00:02:40,210
+to a bigger font size,
+
+65
+00:02:40,210 --> 00:02:42,910
+because the current font size of 16 pixels
+
+66
+00:02:42,910 --> 00:02:44,990
+seems a little small. 
+
+67
+00:02:44,990 --> 00:02:48,000
+So let's go ahead and make it 18 pixels. 
+
+68
+00:02:48,000 --> 00:02:51,770
+We'll use the target divided by context
+
+69
+00:02:51,770 --> 00:02:53,880
+equals result formula
+
+70
+00:02:53,880 --> 00:02:56,210
+to convert our body font size
+
+71
+00:02:56,210 --> 00:02:58,510
+to ems. 
+
+72
+00:02:58,510 --> 00:02:59,900
+[typing]
+
+73
+00:02:59,900 --> 00:03:03,250
+So 18 divided by 16
+
+74
+00:03:03,250 --> 00:03:06,990
+gives us a body font size
+
+75
+00:03:06,990 --> 00:03:10,950
+ of 1.125em. 
+
+76
+00:03:10,950 --> 00:03:12,850
+[typing]
+
+77
+00:03:12,850 --> 00:03:15,540
+This establishes a new context
+
+78
+00:03:15,540 --> 00:03:18,310
+for our font sizes and line height. 
+
+79
+00:03:18,310 --> 00:03:20,710
+What we did was make the new font size
+
+80
+00:03:20,710 --> 00:03:23,890
+1.125 times larger
+
+81
+00:03:23,890 --> 00:03:26,020
+than the browser's default size 
+
+82
+00:03:26,020 --> 00:03:28,100
+of 16 pixels. 
+
+83
+00:03:28,100 --> 00:03:31,870
+Sizing body text shouldn't be entirely based
+
+84
+00:03:31,870 --> 00:03:34,000
+on personal preference. 
+
+85
+00:03:34,000 --> 00:03:36,660
+We need to consider things like reading distances
+
+86
+00:03:36,660 --> 00:03:40,370
+and the screens or devices it may be viewed in. 
+
+87
+00:03:40,370 --> 00:03:43,710
+Desktop screens are generally further away
+
+88
+00:03:43,710 --> 00:03:46,990
+than tablets or most mobile devices,
+
+89
+00:03:46,990 --> 00:03:48,490
+and it's a larger screen,
+
+90
+00:03:48,490 --> 00:03:51,540
+so the font size should be slightly bigger. 
+
+91
+00:03:51,540 --> 00:03:54,300
+Eighteen pixels seems to be a good size
+
+92
+00:03:54,300 --> 00:03:56,450
+for this typeface we chose--
+
+93
+00:03:56,450 --> 00:03:58,110
+PT Serif--
+
+94
+00:03:58,110 --> 00:04:01,150
+so we'll keep that size for our main body text. 
+
+95
+00:04:01,150 --> 00:04:03,390
+But we can also make our headings
+
+96
+00:04:03,390 --> 00:04:05,820
+a little larger, too. 
+
+97
+00:04:05,820 --> 00:04:07,390
+When sizing type, 
+
+98
+00:04:07,390 --> 00:04:09,220
+it's not good practice to
+
+99
+00:04:09,220 --> 00:04:11,150
+just select a random font size
+
+100
+00:04:11,150 --> 00:04:13,240
+that we think would look good. 
+
+101
+00:04:13,240 --> 00:04:16,540
+We probably could get away with it here,
+
+102
+00:04:16,540 --> 00:04:19,579
+since it's a simple page with 3 heading sizes
+
+103
+00:04:19,579 --> 00:04:21,610
+and body text,
+
+104
+00:04:21,610 --> 00:04:24,380
+but it's good to use a typographic scale,
+
+105
+00:04:24,380 --> 00:04:26,570
+because it helps us achieve
+
+106
+00:04:26,570 --> 00:04:28,650
+a consistent hierarchy,
+
+107
+00:04:28,650 --> 00:04:30,510
+and it ensures that our design
+
+108
+00:04:30,510 --> 00:04:32,870
+stays harmonious in every way.
+
+109
+00:04:32,870 --> 00:04:35,650
+Here is an example of the traditional
+
+110
+00:04:35,650 --> 00:04:37,520
+typographic scale,
+
+111
+00:04:37,520 --> 00:04:40,370
+which increases gradually in increments 
+
+112
+00:04:40,370 --> 00:04:42,580
+of 1, 2, 3,
+
+113
+00:04:42,580 --> 00:04:44,170
+and, finally, 12,
+
+114
+00:04:44,170 --> 00:04:47,490
+to ensure consistency in the proportions. 
+
+115
+00:04:47,490 --> 00:04:50,340
+We'll go ahead and base our font sizes
+
+116
+00:04:50,340 --> 00:04:52,560
+on this scale, which they already are, 
+
+117
+00:04:52,560 --> 00:04:54,980
+we just need to convert our headings
+
+118
+00:04:54,980 --> 00:04:58,060
+from pixels to em units. 
+
+119
+00:04:58,060 --> 00:05:00,690
+Using our new font-size context
+
+120
+00:05:00,690 --> 00:05:02,390
+of 18px,
+
+121
+00:05:02,390 --> 00:05:05,590
+we'll change our heading size here
+
+122
+00:05:05,590 --> 00:05:07,620
+from 72px
+
+123
+00:05:07,620 --> 00:05:11,410
+to 4em.
+
+124
+00:05:11,410 --> 00:05:14,120
+For our Heading 2, we can change that
+
+125
+00:05:14,120 --> 00:05:16,570
+to 2em,
+
+126
+00:05:16,570 --> 00:05:19,770
+which is twice the 18-pixel font size.
+
+127
+00:05:19,770 --> 00:05:22,910
+And just below in our Heading 3, 
+
+128
+00:05:22,910 --> 00:05:25,240
+we'll change it from 24px
+
+129
+00:05:25,240 --> 00:05:29,840
+ to 1.333.
+
+130
+00:05:29,840 --> 00:05:32,920
+And finally, for our Code Example text,
+
+131
+00:05:32,920 --> 00:05:35,710
+we can set a font size,
+
+132
+00:05:35,710 --> 00:05:38,390
+but this time we want to set it
+
+133
+00:05:38,390 --> 00:05:41,250
+back to 16 pixels. 
+
+134
+00:05:41,250 --> 00:05:42,720
+So instead of just typing "16 pixels," 
+
+135
+00:05:42,720 --> 00:05:45,410
+we can use the "rem" unit,
+
+136
+00:05:45,410 --> 00:05:47,910
+which stands for "root em"
+
+137
+00:05:47,910 --> 00:05:49,620
+which just resizes it back
+
+138
+00:05:49,620 --> 00:05:51,980
+ to the base root unit 
+
+139
+00:05:51,980 --> 00:05:54,200
+of 16px. 
+
+140
+00:05:54,200 --> 00:05:56,610
+When we refresh the page, 
+
+141
+00:05:56,610 --> 00:05:58,710
+there we see our new font sizes
+
+142
+00:05:58,710 --> 00:06:01,550
+set in ems. 
+
+143
+00:06:01,550 --> 00:06:05,380
+Optimal readability requires a certain amount of control
+
+144
+00:06:05,380 --> 00:06:07,520
+over the line length.
+
+145
+00:06:07,520 --> 00:06:10,800
+So next, we'll need to create a fluid line length
+
+146
+00:06:10,800 --> 00:06:13,860
+that resizes whenever the browser width
+
+147
+00:06:13,860 --> 00:06:15,300
+is reduced
+
+148
+00:06:15,300 --> 00:06:18,170
+or when the page is viewed on smaller screen sizes,
+
+149
+00:06:18,170 --> 00:06:20,360
+like on mobile devices. 
+
+150
+00:06:20,360 --> 00:06:22,190
+Because, as we can see here, 
+
+151
+00:06:22,190 --> 00:06:24,920
+the width of our lines
+
+152
+00:06:24,920 --> 00:06:26,830
+are fixed, because currently 
+
+153
+00:06:26,830 --> 00:06:28,860
+our containing element
+
+154
+00:06:28,860 --> 00:06:30,320
+or "wrap div"
+
+155
+00:06:30,320 --> 00:06:33,330
+is set to a fixed width
+
+156
+00:06:33,330 --> 00:06:35,780
+of 600px. 
+
+157
+00:06:35,780 --> 00:06:37,760
+In order to make it fluid, 
+
+158
+00:06:37,760 --> 00:06:40,460
+we'll need to define the width in percentages.
+
+159
+00:06:41,850 --> 00:06:43,700
+Fiddling around with percentage numbers,
+
+160
+00:06:43,700 --> 00:06:45,710
+I came up with a width 
+
+161
+00:06:45,710 --> 00:06:48,460
+of 58,
+
+162
+00:06:48,460 --> 00:06:51,280
+which closely matches the 600-pixel width. 
+
+163
+00:06:51,280 --> 00:06:54,650
+We'll give it a max width of 58%.
+
+164
+00:06:54,650 --> 00:06:57,460
+That way it cannot grow any more than that. 
+
+165
+00:06:58,220 --> 00:07:00,530
+So now when we refresh this, 
+
+166
+00:07:00,530 --> 00:07:03,860
+the lines of text are fluid
+
+167
+00:07:03,860 --> 00:07:06,170
+and resize to 58%
+
+168
+00:07:06,170 --> 00:07:08,550
+ of the viewport width. 
+
+169
+00:07:08,550 --> 00:07:11,650
+But notice when we are at a smaller width, 
+
+170
+00:07:11,650 --> 00:07:13,580
+the lines of text are now
+
+171
+00:07:13,580 --> 00:07:15,330
+ too short. 
+
+172
+00:07:15,330 --> 00:07:18,040
+So we once again need to adjust a few things here. 
+
+173
+00:07:20,400 --> 00:07:22,190
+At the bottom of our style sheet, 
+
+174
+00:07:22,190 --> 00:07:24,770
+we have 2 media queries
+
+175
+00:07:24,770 --> 00:07:28,110
+and that's all we'll need for this particular example. 
+
+176
+00:07:28,110 --> 00:07:30,500
+If you want to learn more about media queries, 
+
+177
+00:07:30,500 --> 00:07:33,110
+take a look at the Deep Dive on media queries
+
+178
+00:07:33,110 --> 00:07:35,690
+or check out Allison Grayce's series
+
+179
+00:07:35,690 --> 00:07:37,870
+on responsive web design. 
+
+180
+00:07:37,870 --> 00:07:40,810
+But, here, we'll need to make things adaptive
+
+181
+00:07:40,810 --> 00:07:43,720
+with as few breakpoints as possible. 
+
+182
+00:07:43,720 --> 00:07:45,460
+In fact, we'll only adjust it
+
+183
+00:07:45,460 --> 00:07:47,300
+at 1 breakpoint. 
+
+184
+00:07:48,610 --> 00:07:50,930
+So whenever the browser is reduced
+
+185
+00:07:50,930 --> 00:07:53,630
+below 600px, 
+
+186
+00:07:53,630 --> 00:07:56,790
+the max width of our wrap
+
+187
+00:07:56,790 --> 00:07:59,850
+will increase to 85%.
+
+188
+00:07:59,850 --> 00:08:01,520
+We'll refresh that. 
+
+189
+00:08:02,410 --> 00:08:04,820
+Now you can see how
+
+190
+00:08:04,820 --> 00:08:06,860
+it adjusts right here. 
+
+191
+00:08:06,860 --> 00:08:09,480
+So the line of text is no longer too short. 
+
+192
+00:08:09,480 --> 00:08:11,690
+It's actually quite readable. 
+
+193
+00:08:13,350 --> 00:08:16,820
+Next let's adjust the font size of the body text
+
+194
+00:08:16,820 --> 00:08:18,850
+so that it's not too big
+
+195
+00:08:18,850 --> 00:08:20,250
+if the screen is narrower
+
+196
+00:08:20,250 --> 00:08:22,610
+ than 600px. 
+
+197
+00:08:22,610 --> 00:08:24,250
+We'll just need to reset
+
+198
+00:08:24,250 --> 00:08:27,600
+the body font size to 1em.
+
+199
+00:08:27,600 --> 00:08:30,800
+One em is equivalent to 16px,
+
+200
+00:08:30,800 --> 00:08:33,230
+so this becomes our new context 
+
+201
+00:08:33,230 --> 00:08:35,799
+for font sizes when the viewport is less
+
+202
+00:08:35,799 --> 00:08:38,480
+than 600-pixels wide. 
+
+203
+00:08:40,470 --> 00:08:42,630
+Back in our browser, we can see that
+
+204
+00:08:42,630 --> 00:08:45,350
+when the page
+
+205
+00:08:45,350 --> 00:08:48,040
+is reduced below 600px, 
+
+206
+00:08:48,040 --> 00:08:50,250
+the paragraph text and headings
+
+207
+00:08:50,250 --> 00:08:52,690
+scale down accordingly and still maintain
+
+208
+00:08:52,690 --> 00:08:56,200
+their proportions. 
+
+209
+00:08:56,200 --> 00:09:00,420
+But notice the line lengths are now too long,
+
+210
+00:09:00,420 --> 00:09:02,540
+and they keep increasing in length
+
+211
+00:09:02,540 --> 00:09:06,140
+the wider the browser gets. 
+
+212
+00:09:06,140 --> 00:09:08,540
+So we'll need one more media query
+
+213
+00:09:08,540 --> 00:09:10,820
+to adjust this and make sure the text
+
+214
+00:09:10,820 --> 00:09:12,460
+doesn't get any wider 
+
+215
+00:09:12,460 --> 00:09:14,810
+once the viewport is wider than
+
+216
+00:09:14,810 --> 00:09:17,400
+980px,
+
+217
+00:09:17,400 --> 00:09:20,560
+because that will still preserve our readable line length. 
+
+218
+00:09:20,560 --> 00:09:22,550
+So in our media query here, 
+
+219
+00:09:22,550 --> 00:09:25,570
+we'll once again select our wrap div,
+
+220
+00:09:26,420 --> 00:09:28,380
+and we will give it a max width
+
+221
+00:09:28,380 --> 00:09:31,000
+of 600px. 
+
+222
+00:09:31,000 --> 00:09:33,190
+This will give us that optimal reading length
+
+223
+00:09:33,190 --> 00:09:35,130
+of about 60 characters. 
+
+224
+00:09:35,130 --> 00:09:37,040
+[typing]
+
+225
+00:09:37,040 --> 00:09:39,650
+Now if our browser exceeds
+
+226
+00:09:39,650 --> 00:09:42,010
+a width of 980px, 
+
+227
+00:09:42,010 --> 00:09:44,100
+the text will stay fixed
+
+228
+00:09:44,100 --> 00:09:47,640
+at 600px,
+
+229
+00:09:47,640 --> 00:09:49,470
+and the line lengths won't increase. 
+

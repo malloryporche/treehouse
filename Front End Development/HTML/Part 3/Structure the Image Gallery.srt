@@ -1,0 +1,433 @@
+1
+00:00:00,510 --> 00:00:02,930
+Our navigation is finished, but now we
+need
+
+2
+00:00:02,930 --> 00:00:05,630
+to create a structure for the image
+gallery.
+
+3
+00:00:05,630 --> 00:00:10,590
+We'll do this with a similar technique
+that also uses an HTML list.
+
+4
+00:00:12,010 --> 00:00:16,455
+Similar to our navigation area, we're now
+going to use another
+
+5
+00:00:16,455 --> 00:00:22,260
+unordered list to build our gallery inside
+of our section element.
+
+6
+00:00:22,260 --> 00:00:27,780
+So I am going to scroll down here and
+delete this temporary paragraph
+
+7
+00:00:27,780 --> 00:00:33,560
+that's inside of our section, and instead,
+I'm going to type an unordered list.
+
+8
+00:00:33,560 --> 00:00:38,705
+And inside of that unordered list, I'm
+going to type a single list item.
+
+9
+00:00:38,705 --> 00:00:44,550
+We'll create other list items, but it's
+easier to fill out this one first.
+
+10
+00:00:44,550 --> 00:00:49,390
+We'll then copy it and make the necessary
+modifications because most
+
+11
+00:00:49,390 --> 00:00:53,180
+of these will be the same with just a few
+small changes.
+
+12
+00:00:54,230 --> 00:00:58,160
+Now we need to pull in some images for our
+gallery.
+
+13
+00:00:58,160 --> 00:00:59,980
+I'm actually going to pull in all the
+
+14
+00:00:59,980 --> 00:01:03,420
+images we'll need for the rest of this
+project.
+
+15
+00:01:03,420 --> 00:01:09,520
+To download them, simply download the
+project files associated with this video.
+
+16
+00:01:09,520 --> 00:01:13,690
+You should find a link to them next to the
+video player.
+
+17
+00:01:13,690 --> 00:01:19,140
+Once you've downloaded them, you should
+have a zip file that looks like this.
+
+18
+00:01:19,140 --> 00:01:26,410
+Next, unzip the file and then find the
+folder inside called Image.
+
+19
+00:01:28,670 --> 00:01:31,810
+You can upload the files into Workspaces
+
+20
+00:01:31,810 --> 00:01:36,370
+by dragging them onto the Workspaces
+sidebar.
+
+21
+00:01:36,370 --> 00:01:40,900
+To do this, simply select all of the files
+inside the Image
+
+22
+00:01:40,900 --> 00:01:46,880
+folder and make sure that you don't select
+the actual folder itself.
+
+23
+00:01:46,880 --> 00:01:53,750
+Then with just the files selected, drag
+them into the Workspaces window
+
+24
+00:01:53,750 --> 00:01:58,850
+and drop them in the darkened area that
+says, Drop Files to Upload.
+
+25
+00:02:00,320 --> 00:02:03,660
+This will automatically import all of the
+files.
+
+26
+00:02:04,850 --> 00:02:11,610
+Now we need to create a folder inside of
+our workspace called Image.
+
+27
+00:02:11,610 --> 00:02:19,380
+To do this simply right-click in any blank
+area in the sidebar and select New Folder.
+
+28
+00:02:19,380 --> 00:02:25,460
+I'll type in img and hit Enter, and then
+
+29
+00:02:25,460 --> 00:02:30,580
+we need to drag each of our image files
+into the folder.
+
+30
+00:02:32,690 --> 00:02:34,470
+So I'll drag all of these
+
+31
+00:02:37,300 --> 00:02:38,460
+into the folder here.
+
+32
+00:02:44,380 --> 00:02:48,241
+And the only file that should be outside
+
+33
+00:02:48,241 --> 00:02:52,700
+of the image folder is the index.html
+file.
+
+34
+00:02:52,700 --> 00:02:57,660
+For the gallery images, you should feel
+encouraged to use your own pictures.
+
+35
+00:02:57,660 --> 00:03:00,790
+You can, of course, use these but if you
+want to customize
+
+36
+00:03:00,790 --> 00:03:05,790
+the site, you could use your own artwork
+or your own photographs.
+
+37
+00:03:05,790 --> 00:03:11,125
+This project works best with images that
+are sized to a width of
+
+38
+00:03:11,125 --> 00:03:16,530
+1,024 pixels, and a height of 768 pixels.
+
+39
+00:03:16,530 --> 00:03:21,260
+Or more commonly, 1,024 by 768.
+
+40
+00:03:21,260 --> 00:03:25,430
+We won't go into detail here about how to
+resize images,
+
+41
+00:03:25,430 --> 00:03:31,330
+but most image editing programs like
+Photoshop can do this very easily.
+
+42
+00:03:31,330 --> 00:03:37,060
+With our images in place, let's use them
+in our layout like this.
+
+43
+00:03:37,060 --> 00:03:41,460
+I'm going to go to this list item and open
+it up.
+
+44
+00:03:41,460 --> 00:03:51,400
+And inside, I'm going to type a tag called
+img with an attribute called src.
+
+45
+00:03:53,390 --> 00:03:57,145
+Inside of that attribute I'm going to type
+the value
+
+46
+00:03:57,145 --> 00:04:04,560
+img/numbers-01.jpg.
+
+47
+00:04:04,560 --> 00:04:09,330
+I'm going to type a second attribute,
+called alt and
+
+48
+00:04:09,330 --> 00:04:14,170
+then I'm going to leave it blank for right
+now.
+
+49
+00:04:14,170 --> 00:04:19,240
+Here, we've introduced the image element,
+or img, for short.
+
+50
+00:04:19,240 --> 00:04:22,255
+Similar to some other elements we've
+learned about, it's
+
+51
+00:04:22,255 --> 00:04:27,580
+self-closing, so, you don't need to create
+a closing tag.
+
+52
+00:04:27,580 --> 00:04:31,880
+The image element has two required
+attributes.
+
+53
+00:04:31,880 --> 00:04:36,810
+The first is the source, or src for short.
+
+54
+00:04:36,810 --> 00:04:39,730
+This is very similar to the href, or
+
+55
+00:04:39,730 --> 00:04:44,170
+hyperlink reference, that we learned about
+for anchor elements.
+
+56
+00:04:44,170 --> 00:04:49,410
+It simply tells the browser where this
+image file is located.
+
+57
+00:04:49,410 --> 00:04:54,800
+In our case, it's inside of the Image
+folder and then we want to use the
+
+58
+00:04:54,800 --> 00:05:00,400
+file numbers-01.jpg.
+
+59
+00:05:00,400 --> 00:05:04,370
+This is what's called a relative path.
+
+60
+00:05:04,370 --> 00:05:07,300
+In other words, we're telling the browser
+where
+
+61
+00:05:07,300 --> 00:05:13,780
+this image is located relative to our
+index.html file.
+
+62
+00:05:13,780 --> 00:05:18,880
+The Image folder and the index.html file
+are sitting at the
+
+63
+00:05:18,880 --> 00:05:24,870
+same level in our directory structure, or
+our file tree.
+
+64
+00:05:24,870 --> 00:05:28,460
+Then inside of our Image folder, we have
+our image.
+
+65
+00:05:29,950 --> 00:05:33,570
+This is different than an absolute URL.
+
+66
+00:05:33,570 --> 00:05:37,656
+For example, we can type http://.
+
+67
+00:05:37,656 --> 00:05:46,830
+[SOUND] The domain of our website, which
+might be example.com, for example.
+
+68
+00:05:46,830 --> 00:05:48,770
+And then the path to our image.
+
+69
+00:05:49,950 --> 00:05:53,750
+However, instead of an absolute URL, we're
+just going
+
+70
+00:05:53,750 --> 00:05:58,190
+to use a relative URL in this particular
+case.
+
+71
+00:05:58,190 --> 00:06:03,410
+That will make it easier to upload our
+site to a web server later on.
+
+72
+00:06:03,410 --> 00:06:07,260
+If that doesn't make sense to you right
+now, don't worry.
+
+73
+00:06:07,260 --> 00:06:11,650
+We'll be using more examples of relative
+URLs throughout this project.
+
+74
+00:06:12,960 --> 00:06:20,190
+The second required attribute is the Alt
+attribute, which is short for alternate.
+
+75
+00:06:20,190 --> 00:06:23,650
+This is intended to provide a brief
+description of the
+
+76
+00:06:23,650 --> 00:06:28,280
+visual for when the image isn't available
+for some reason.
+
+77
+00:06:28,280 --> 00:06:31,790
+This might be because the site visitor is
+actually
+
+78
+00:06:31,790 --> 00:06:37,790
+a search engine spider, which can't
+actually see visual images.
+
+79
+00:06:37,790 --> 00:06:43,410
+It also could be because the site visitor
+has images disabled in their browser.
+
+80
+00:06:43,410 --> 00:06:46,380
+Yet another reason is to assist site
+
+81
+00:06:46,380 --> 00:06:50,930
+visitors with visual impairments that use
+special software
+
+82
+00:06:50,930 --> 00:06:57,140
+called a screen reader, which reads text
+out loud to help them navigate the web.
+
+83
+00:06:57,140 --> 00:07:00,720
+In our case, we've left the Alt attribute
+blank.
+
+84
+00:07:00,720 --> 00:07:05,690
+Because in just a moment, we're going to
+add a caption to our image, just below it.
+
+85
+00:07:05,690 --> 00:07:08,390
+When you add a caption, having the same
+text
+
+86
+00:07:08,390 --> 00:07:13,190
+repeated in the Alt attribute is typically
+not necessary.
+
+87
+00:07:13,190 --> 00:07:19,810
+Let's save and then refresh our preview
+quickly, to see what this looks like.
+
+88
+00:07:19,810 --> 00:07:25,460
+As you can see, we now have an image on
+the page and it's very large.
+
+89
+00:07:25,460 --> 00:07:29,920
+But that's because we haven't applied any
+visual styling yet.
+
+90
+00:07:29,920 --> 00:07:32,850
+We'll do that later on to help resize the
+image.
+

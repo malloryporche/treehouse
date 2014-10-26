@@ -1,0 +1,320 @@
+1
+00:00:00,440 --> 00:00:03,540
+So far we've just been working with code,
+but before we
+
+2
+00:00:03,540 --> 00:00:07,340
+move any further we should explore the
+design of our website.
+
+3
+00:00:07,340 --> 00:00:12,580
+Just to serve as a reminder, this is what
+our project will look like when it's done.
+
+4
+00:00:12,580 --> 00:00:15,430
+When you're creating projects on your own
+the design won't
+
+5
+00:00:15,430 --> 00:00:18,020
+be done for you like it is in this case.
+
+6
+00:00:18,020 --> 00:00:20,070
+So it's important that we walk through
+some
+
+7
+00:00:20,070 --> 00:00:23,420
+of the design decisions here and
+understand them.
+
+8
+00:00:23,420 --> 00:00:25,840
+The design process from one site to
+another
+
+9
+00:00:25,840 --> 00:00:30,540
+will always vary, but for our purposes we
+can break things down like this.
+
+10
+00:00:31,540 --> 00:00:35,310
+First, we're going to decide on goals,
+then we'll list out
+
+11
+00:00:35,310 --> 00:00:39,990
+the page elements, and finally we'll
+layout the pages with shapes.
+
+12
+00:00:39,990 --> 00:00:42,010
+I'm going to work through the design on
+
+13
+00:00:42,010 --> 00:00:45,420
+paper, and I strongly encourage you to
+follow along.
+
+14
+00:00:45,420 --> 00:00:49,860
+First, we should decide on an overall goal
+for our site.
+
+15
+00:00:49,860 --> 00:00:51,010
+In these lessons,
+
+16
+00:00:51,010 --> 00:00:55,960
+this website will a design portfolio with
+a goal of booking new work.
+
+17
+00:00:55,960 --> 00:00:59,370
+However, there will be many opportunities
+along the way
+
+18
+00:00:59,370 --> 00:01:02,770
+for you to customize this website for your
+own needs.
+
+19
+00:01:02,770 --> 00:01:07,760
+For example, your site's goal might be to
+showcase your arts and crafts, or perhaps
+
+20
+00:01:07,760 --> 00:01:11,740
+you want to create a gallery of photos to
+share with your family and friends.
+
+21
+00:01:12,790 --> 00:01:16,520
+Once you've decided on your own goal we
+should list out the page
+
+22
+00:01:16,520 --> 00:01:17,930
+elements we'll need.
+
+23
+00:01:17,930 --> 00:01:19,820
+For this website we'll need an image
+
+24
+00:01:19,820 --> 00:01:23,270
+gallery, an about page, and a contact
+page.
+
+25
+00:01:23,270 --> 00:01:26,358
+We'll also need a simple header with a
+title and navigation.
+
+26
+00:01:26,358 --> 00:01:30,970
+Often this site-wide header is called top
+level navigation.
+
+27
+00:01:30,970 --> 00:01:36,450
+We'll also need a site footer.
+This image gallery will showcase our work.
+
+28
+00:01:36,450 --> 00:01:39,210
+The about page will provide some context
+for the
+
+29
+00:01:39,210 --> 00:01:42,625
+website as a whole and tell the visitor
+more information.
+
+30
+00:01:42,625 --> 00:01:47,850
+And then the contact page will give the
+visitor a way to get in touch.
+
+31
+00:01:47,850 --> 00:01:50,380
+This is especially important for a design
+
+32
+00:01:50,380 --> 00:01:53,920
+portfolio where we're trying to get new
+work.
+
+33
+00:01:53,920 --> 00:01:58,860
+With our list in hand, let's quickly lay
+out our three page website.
+
+34
+00:01:58,860 --> 00:02:02,180
+We're going to use a technique called wire
+framing to
+
+35
+00:02:02,180 --> 00:02:05,680
+lay out the shapes and visual structure of
+our site.
+
+36
+00:02:05,680 --> 00:02:08,060
+This is a much faster way to experiment
+
+37
+00:02:08,060 --> 00:02:12,570
+with site layout before you spend lots of
+time writing code.
+
+38
+00:02:12,570 --> 00:02:15,660
+We're also going to design the mobile
+version of the
+
+39
+00:02:15,660 --> 00:02:19,270
+site and then work our way up to more
+complex layouts.
+
+40
+00:02:21,210 --> 00:02:27,220
+I'm going to layout our gallery as a grid
+with two images in each row.
+
+41
+00:02:27,220 --> 00:02:32,650
+Underneath each image will be a short
+caption that gives the image some context.
+
+42
+00:02:32,650 --> 00:02:33,140
+This layout
+
+43
+00:02:33,140 --> 00:02:35,170
+will allow us enough room to make the
+
+44
+00:02:35,170 --> 00:02:38,850
+images large so they command a lot of
+attention.
+
+45
+00:02:38,850 --> 00:02:42,280
+Now, let's layout the contact page and
+about page.
+
+46
+00:02:42,280 --> 00:02:47,770
+Both of these pages are pretty simple, so
+they can follow the same basic layout.
+
+47
+00:02:47,770 --> 00:02:51,740
+We'll create a single column and stack
+everything, because mobile
+
+48
+00:02:51,740 --> 00:02:54,430
+sites don't really have enough room for
+too many columns.
+
+49
+00:02:54,430 --> 00:02:56,730
+But they're great at scrolling.
+
+50
+00:02:56,730 --> 00:02:58,310
+In the case of our about page,
+
+51
+00:02:58,310 --> 00:03:02,330
+we'll add a photo and a paragraph about
+ourselves.
+
+52
+00:03:02,330 --> 00:03:07,870
+For the contact page, we'll write a
+paragraph describing how best to reach us,
+
+53
+00:03:07,870 --> 00:03:13,510
+along with details like an email address,
+phone number and Twitter account.
+
+54
+00:03:13,510 --> 00:03:15,200
+That's about it for the mobile site.
+
+55
+00:03:15,200 --> 00:03:20,960
+Now let's take these same pages and make
+them work for tablets and desktops.
+
+56
+00:03:20,960 --> 00:03:23,360
+We have a lot more width to work with
+here,
+
+57
+00:03:23,360 --> 00:03:29,020
+so I'm going to spread apart the logo text
+and the navigation in the header.
+
+58
+00:03:29,020 --> 00:03:32,260
+Then on the gallery page, I'm going to
+
+59
+00:03:32,260 --> 00:03:34,840
+break up my two columns into three
+columns.
+
+60
+00:03:35,870 --> 00:03:40,970
+Finally, on our about page and contact
+page, I'm going to create two
+
+61
+00:03:40,970 --> 00:03:45,510
+columns and give our page elements a
+little bit more room to breathe.
+
+62
+00:03:45,510 --> 00:03:48,440
+Looks good.
+Our quick wire frames
+
+63
+00:03:48,440 --> 00:03:50,020
+are pretty much done.
+
+64
+00:03:50,020 --> 00:03:53,580
+If we were building a more complex website
+we might wanna take things
+
+65
+00:03:53,580 --> 00:03:59,100
+further and build high fidelity mock ups
+in an image editing tool like Photoshop.
+
+66
+00:03:59,100 --> 00:04:01,500
+However, this is a simple website.
+
+67
+00:04:01,500 --> 00:04:06,280
+And as we build it in HTML and CSS we can
+fill in the details along the way.
+

@@ -1,0 +1,208 @@
+1
+00:00:00,000 --> 00:00:04,719
+[MUSIC].
+
+2
+00:00:04,719 --> 00:00:08,850
+In order to understand where we're going,
+it helps to take a look back.
+
+3
+00:00:08,850 --> 00:00:10,400
+Many things in HTML can
+
+4
+00:00:10,400 --> 00:00:12,890
+seem counter-intuitive, but walking
+through some
+
+5
+00:00:12,890 --> 00:00:18,370
+history and foundational knowledge will
+provide some context for upcoming lessons.
+
+6
+00:00:18,370 --> 00:00:22,940
+HTML is an initialism that stands for
+hypertext markup language.
+
+7
+00:00:22,940 --> 00:00:26,140
+It was originally designed to easily share
+scientific
+
+8
+00:00:26,140 --> 00:00:29,780
+research papers, which is why
+professionals typically use terms
+
+9
+00:00:29,780 --> 00:00:33,030
+like webpage to describe their creations.
+
+10
+00:00:33,030 --> 00:00:35,520
+Hyper text basically just means any kind
+of
+
+11
+00:00:35,520 --> 00:00:38,300
+text that can be displayed on a computer
+screen.
+
+12
+00:00:38,300 --> 00:00:43,130
+But often times, the definition includes
+the notion of linked documents.
+
+13
+00:00:43,130 --> 00:00:44,440
+This is how the web works.
+
+14
+00:00:44,440 --> 00:00:48,390
+It's a network of information connected
+via hyperlinks.
+
+15
+00:00:48,390 --> 00:00:50,600
+It's worth noting here that this web of
+
+16
+00:00:50,600 --> 00:00:53,910
+documents is just one part of the
+Internet.
+
+17
+00:00:53,910 --> 00:00:55,100
+The Internet
+
+18
+00:00:55,100 --> 00:01:01,380
+is the global system of computer networks
+and hardware on which the web is built.
+
+19
+00:01:01,380 --> 00:01:04,110
+Now, let's talk about the other part of
+HTML.
+
+20
+00:01:04,110 --> 00:01:07,050
+The term markup language encompasses the
+idea of
+
+21
+00:01:07,050 --> 00:01:10,420
+computer code that describes the structure
+of content.
+
+22
+00:01:10,420 --> 00:01:14,530
+Imagine that you're creating a newspaper,
+and that you need to organize it.
+
+23
+00:01:14,530 --> 00:01:17,340
+First, you need to title the newspaper.
+
+24
+00:01:17,340 --> 00:01:20,840
+Then you need to add a few sections for
+different topics.
+
+25
+00:01:20,840 --> 00:01:22,760
+Each of those sections needs a large
+
+26
+00:01:22,760 --> 00:01:26,040
+headline, followed by a few smaller
+headlines.
+
+27
+00:01:26,040 --> 00:01:28,940
+Then, we need to add a few paragraphs and
+photos.
+
+28
+00:01:30,030 --> 00:01:33,800
+You'll find that building the structure of
+a webpage is very similar.
+
+29
+00:01:33,800 --> 00:01:36,970
+When you're creating content, you'll need
+to use HTML to
+
+30
+00:01:36,970 --> 00:01:41,350
+break it up into sections, headlines,
+paragraphs and so on.
+
+31
+00:01:41,350 --> 00:01:46,310
+HTML allows us to describe structure but
+this is actually a separate
+
+32
+00:01:46,310 --> 00:01:50,620
+process from designing its visual
+presentation with CSS.
+
+33
+00:01:50,620 --> 00:01:52,570
+We'll learn more about that later.
+
+34
+00:01:52,570 --> 00:01:56,210
+By describing the various parts of the
+document with markup,
+
+35
+00:01:56,210 --> 00:02:00,240
+web browsers can parse the structure and
+understand its contents.
+
+36
+00:02:01,250 --> 00:02:05,760
+Some popular web browsers you may have
+heard of include Google Chrome, Firefox,
+
+37
+00:02:05,760 --> 00:02:11,320
+Safari, or Internet Explorer.
+One thing to keep in mind is that
+
+38
+00:02:11,320 --> 00:02:13,760
+HTML was not originally designed for
+
+39
+00:02:13,760 --> 00:02:17,010
+complex web applications like Facebook or
+Twitter.
+
+40
+00:02:17,010 --> 00:02:19,490
+Rather, it evolved to serve that purpose.
+
+41
+00:02:19,490 --> 00:02:21,800
+And, it's only recently that HTML has
+
+42
+00:02:21,800 --> 00:02:25,900
+implemented features to serve these more
+interactive environments.
+
+43
+00:02:25,900 --> 00:02:28,150
+As we continue to learn more, you'll find
+that
+
+44
+00:02:28,150 --> 00:02:31,570
+web languages are just as flexible as they
+are powerful.
+

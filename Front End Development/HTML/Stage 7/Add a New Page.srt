@@ -1,0 +1,470 @@
+1
+00:00:00,000 --> 00:00:04,727
+[MUSIC]
+
+2
+00:00:04,727 --> 00:00:06,520
+Great job making it this far.
+
+3
+00:00:06,520 --> 00:00:08,990
+We've created our homepage but now we're
+ready
+
+4
+00:00:08,990 --> 00:00:12,370
+to build the About page and the Contact
+page.
+
+5
+00:00:12,370 --> 00:00:16,040
+The About page is less complex than the
+Contact page so,
+
+6
+00:00:16,040 --> 00:00:20,310
+let's start with that first and then build
+on what we learn.
+
+7
+00:00:20,310 --> 00:00:27,000
+First we're going to create a new file
+called about.html.
+
+8
+00:00:27,000 --> 00:00:30,040
+Unlike our index file, we can actually
+call
+
+9
+00:00:30,040 --> 00:00:35,374
+this file, whatever we want.
+As long as we maintain the .html
+
+10
+00:00:35,374 --> 00:00:39,660
+file extension.
+So if I click on,
+
+11
+00:00:40,700 --> 00:00:45,130
+My Work Space here, using the right mouse
+button, I can
+
+12
+00:00:45,130 --> 00:00:50,248
+select new file and I'll just go ahead and
+
+13
+00:00:50,248 --> 00:00:55,050
+type about.html.
+And work spaces
+
+14
+00:00:55,050 --> 00:00:58,090
+will open the blank file for me.
+
+15
+00:00:58,090 --> 00:01:03,640
+Almost every web server recognizes the
+special file name index.html.
+
+16
+00:01:03,640 --> 00:01:10,958
+And it will use it as the home page, which
+is why we want to keep its special naming.
+
+17
+00:01:10,958 --> 00:01:16,340
+With our about.html file created, let's
+copy all of the
+
+18
+00:01:16,340 --> 00:01:21,320
+HTML from our index page over to the about
+page.
+
+19
+00:01:21,320 --> 00:01:25,050
+Because most of what we need is already
+there.
+
+20
+00:01:25,050 --> 00:01:30,175
+The easiest way to select all of our text
+is to use the keyboard shortcut
+
+21
+00:01:30,175 --> 00:01:35,210
+Cmd+A on a Mac or Ctrl+A on Windows.
+
+22
+00:01:35,210 --> 00:01:41,200
+So if I just click in my text editing area
+and hit Cmd+A on my Mac.
+
+23
+00:01:41,200 --> 00:01:46,480
+And then hit Cmd+C to copy all of the
+text.
+
+24
+00:01:46,480 --> 00:01:52,230
+I can then click on about.html and hit
+Cmd+V to paste all of
+
+25
+00:01:52,230 --> 00:01:57,800
+it.
+Now, let's save the file and see what it
+
+26
+00:01:57,800 --> 00:02:03,480
+looks like in the browser.
+So, if I switch over to my browser here,
+
+27
+00:02:05,730 --> 00:02:11,975
+I can actually click on About and it will
+take me to
+
+28
+00:02:11,975 --> 00:02:18,700
+about.html.
+Of course, the page looks exactly the same
+
+29
+00:02:18,700 --> 00:02:24,500
+as our home page, index.html.
+Because, we haven't changed
+
+30
+00:02:24,500 --> 00:02:30,690
+anything yet.
+So let's start modifying about.html.
+
+31
+00:02:30,690 --> 00:02:35,190
+I'm going to scroll up to the top of the
+file here.
+
+32
+00:02:35,190 --> 00:02:41,490
+And first, I'm going to change the
+selected navigation item over to about.
+
+33
+00:02:41,490 --> 00:02:46,560
+So I'll remove the class selected from the
+portfolio navigation item.
+
+34
+00:02:47,560 --> 00:02:52,180
+And I will add the class selected, to
+about.
+
+35
+00:02:53,300 --> 00:02:56,290
+Next, I'm going to delete everything
+
+36
+00:02:56,290 --> 00:03:02,210
+inside of our section element here.
+And I can just start the selection,
+
+37
+00:03:02,210 --> 00:03:07,380
+and then hold down Shift+Click to continue
+the
+
+38
+00:03:07,380 --> 00:03:12,820
+selection down to where my cursor is.
+And then I can just hit the Delete key.
+
+39
+00:03:14,550 --> 00:03:19,800
+This will leave us with our header, our
+navigation and our footer.
+
+40
+00:03:19,800 --> 00:03:22,060
+And then, leave us with a blank
+
+41
+00:03:22,060 --> 00:03:26,940
+section that we can fill out later.
+That's because we want our
+
+42
+00:03:26,940 --> 00:03:32,250
+header and footer to be same on every
+page, with the exception
+
+43
+00:03:32,250 --> 00:03:37,600
+of the selected item.
+So I saved about.html.
+
+44
+00:03:37,600 --> 00:03:44,310
+And let's switch over to the browser and
+go to about.html.
+
+45
+00:03:44,310 --> 00:03:47,070
+And as you can see, we have our header and
+our
+
+46
+00:03:47,070 --> 00:03:51,800
+footer and then the content area or the
+section is blank.
+
+47
+00:03:53,410 --> 00:03:56,970
+You'll also notice, that the About
+navigation
+
+48
+00:03:56,970 --> 00:04:00,010
+item is now the selected nav item.
+
+49
+00:04:00,010 --> 00:04:05,780
+If I go back to Portfolio, The portfolio
+is the selected nav item.
+
+50
+00:04:05,780 --> 00:04:12,530
+So if we click back and forth between the
+two pages, the site visitor can see
+
+51
+00:04:12,530 --> 00:04:16,520
+which page they're currently on, just by
+looking at navigation.
+
+52
+00:04:17,910 --> 00:04:20,870
+Now, let's go back to our HTML.
+
+53
+00:04:20,870 --> 00:04:25,360
+Once we're done, we'll add a little bit of
+CSS to make it all work.
+
+54
+00:04:26,510 --> 00:04:32,810
+Inside of a section, I'm going to add a
+profile picture of myself.
+
+55
+00:04:32,810 --> 00:04:35,590
+Inside of the img folder here,
+
+56
+00:04:37,680 --> 00:04:41,570
+I have the file nick.jpg.
+
+57
+00:04:41,570 --> 00:04:45,180
+And that's a picture of me.
+So let's go ahead and add it.
+
+58
+00:04:46,410 --> 00:04:51,210
+I'm going to say image src, for source and
+
+59
+00:04:51,210 --> 00:04:55,801
+then the path to our image.
+Which is
+
+60
+00:04:55,801 --> 00:05:03,060
+image/nick.jpg.
+For the alternate text,
+
+61
+00:05:03,060 --> 00:05:07,160
+I'm going to say, Photograph of Nick
+Pettit
+
+62
+00:05:09,440 --> 00:05:16,140
+and then I'm going to add the class
+profile photo.
+
+63
+00:05:18,970 --> 00:05:20,480
+And then I'll close the tag.
+
+64
+00:05:21,900 --> 00:05:25,720
+This image should already be included in
+your images folder.
+
+65
+00:05:25,720 --> 00:05:29,130
+But, you should add your own profile
+picture.
+
+66
+00:05:29,130 --> 00:05:32,740
+A square image that is around 200 pixels
+in
+
+67
+00:05:32,740 --> 00:05:37,580
+both width and 200 pixels in height should
+work best.
+
+68
+00:05:37,580 --> 00:05:43,570
+But you can go up and down in those values
+and the design should still work okay.
+
+69
+00:05:43,570 --> 00:05:44,380
+Experiment
+
+70
+00:05:44,380 --> 00:05:49,920
+and see what works best.
+Next after our image, I'm going to add a
+
+71
+00:05:49,920 --> 00:05:55,310
+third level headline.
+That says: About.
+
+72
+00:05:55,310 --> 00:06:00,730
+Finally I'm going to add some paragraph
+text about myself.
+
+73
+00:06:00,730 --> 00:06:04,440
+You should customize your own text so that
+it's about you.
+
+74
+00:06:05,800 --> 00:06:10,040
+I'm going to say: Hi, I'm Nick Pettit.
+
+75
+00:06:12,120 --> 00:06:16,860
+This is my design portfolio
+
+76
+00:06:17,870 --> 00:06:24,790
+where I share all of my favorite work.
+When I'm not
+
+77
+00:06:24,790 --> 00:06:30,840
+designing things, I enjoy exercising,
+playing video games,
+
+78
+00:06:33,090 --> 00:06:40,650
+drinking good coffee, and more.
+Of course,
+
+79
+00:06:40,650 --> 00:06:45,030
+your description can be longer or shorter
+and you can put whatever you'd like.
+
+80
+00:06:46,520 --> 00:06:53,390
+Next I'm going to put another paragraph.
+And in this paragraph,
+
+81
+00:06:53,390 --> 00:06:58,738
+I'm going to say, if you'd like
+
+82
+00:06:58,738 --> 00:07:03,895
+to follow me on Twitter, my user
+
+83
+00:07:03,895 --> 00:07:09,300
+name is @nickrp.
+Now, it would be nice
+
+84
+00:07:09,300 --> 00:07:15,510
+if we could actually click on that user
+name and go to my Twitter profile page.
+
+85
+00:07:15,510 --> 00:07:17,760
+And again, this should of course, be your
+
+86
+00:07:17,760 --> 00:07:20,760
+Twitter profile or whatever link that
+you'd like.
+
+87
+00:07:22,410 --> 00:07:24,500
+So we've wrapped it in
+
+88
+00:07:24,500 --> 00:07:25,510
+an anchor element.
+
+89
+00:07:26,820 --> 00:07:33,250
+And I'm going to copy and paste the link
+to my Twitter profile.
+
+90
+00:07:36,160 --> 00:07:36,910
+Just like that.
+
+91
+00:07:39,110 --> 00:07:43,640
+So now, if you click in the footer, you
+can go to my Twitter profile.
+
+92
+00:07:43,640 --> 00:07:47,360
+Or you can go ahead and just click this
+link in the text.
+
+93
+00:07:47,360 --> 00:07:51,420
+Now, let's refresh the page, after saving
+of course.
+
+94
+00:07:51,420 --> 00:07:55,850
+And see what it looks like before we add
+any CSS.
+
+95
+00:07:55,850 --> 00:08:01,820
+So there's the picture of me.
+There is our About headline.
+
+96
+00:08:01,820 --> 00:08:04,190
+And then there is the paragraph text that
+
+97
+00:08:04,190 --> 00:08:04,540
+we wrote.
+
+98
+00:08:04,540 --> 00:08:10,930
+And you can see that @nickrp is linked to
+my Twitter profile page.
+
+99
+00:08:10,930 --> 00:08:11,210
+Great.
+

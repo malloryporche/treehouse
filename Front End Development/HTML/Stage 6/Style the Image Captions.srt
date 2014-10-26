@@ -1,0 +1,271 @@
+1
+00:00:00,650 --> 00:00:02,150
+Now, let's move on.
+
+2
+00:00:02,150 --> 00:00:06,870
+The last thing we need to style are the
+paragraphs inside of our list.
+
+3
+00:00:06,870 --> 00:00:11,310
+We've already done a little bit here, but
+there's still more that we can do.
+
+4
+00:00:11,310 --> 00:00:15,170
+So, I'm going to select our gallery.
+
+5
+00:00:18,760 --> 00:00:20,810
+Select the list items.
+
+6
+00:00:20,810 --> 00:00:23,990
+Select the anchor elements inside of those
+list items.
+
+7
+00:00:23,990 --> 00:00:28,210
+And select the paragraphs inside of the
+anchor elements.
+
+8
+00:00:30,420 --> 00:00:32,400
+So, just to review our HTML.
+
+9
+00:00:33,910 --> 00:00:39,690
+We're going from our gallery into the list
+items, into the anchor elements.
+
+10
+00:00:39,690 --> 00:00:42,480
+And then selecting these paragraphs right
+here.
+
+11
+00:00:43,860 --> 00:00:45,830
+So that's where the styling will be
+applied.
+
+12
+00:00:45,830 --> 00:00:51,650
+Let's give them a margin of zero, because
+paragraphs do have
+
+13
+00:00:51,650 --> 00:00:54,580
+some margin by default, so we want to zero
+that out.
+
+14
+00:00:56,200 --> 00:01:00,950
+We'll set the padding to 5%, just to space
+them out a little bit.
+
+15
+00:01:02,150 --> 00:01:05,610
+We want to decrease the font size because
+they're a little bit large.
+
+16
+00:01:05,610 --> 00:01:08,710
+So we'll set it to 0.75 ems.
+
+17
+00:01:09,740 --> 00:01:13,250
+And then, finally, we're going to adjust
+the color.
+
+18
+00:01:13,250 --> 00:01:17,450
+And we'll set it to bdc3c7.
+
+19
+00:01:20,000 --> 00:01:25,664
+So, if we save that out, switch back to
+browser.
+
+20
+00:01:25,664 --> 00:01:27,990
+And refresh.
+
+21
+00:01:27,990 --> 00:01:31,925
+You can see that now we have this lighter
+
+22
+00:01:31,925 --> 00:01:35,660
+gray color here applied to our links as
+well.
+
+23
+00:01:35,660 --> 00:01:41,990
+So, whether the text is linked or unlinked
+this is the color that will be displayed.
+
+24
+00:01:41,990 --> 00:01:45,160
+We've set the margin to zero in favor
+
+25
+00:01:45,160 --> 00:01:47,870
+of adding padding around the image.
+
+26
+00:01:47,870 --> 00:01:50,360
+This is better because margin has a
+tendency to
+
+27
+00:01:50,360 --> 00:01:54,890
+push elements even if they're side of the
+parent container.
+
+28
+00:01:54,890 --> 00:01:59,880
+In other words, they push elements where
+they shouldn't.
+
+29
+00:01:59,880 --> 00:02:04,940
+And finally, you can see the effect that
+the font size declaration had.
+
+30
+00:02:04,940 --> 00:02:10,310
+It decreased the size of the fonts here,
+so they're a little bit more readable.
+
+31
+00:02:11,860 --> 00:02:15,470
+Go ahead and resize, and see what that
+looks like.
+
+32
+00:02:15,470 --> 00:02:17,640
+Once again there's still more work to do
+on
+
+33
+00:02:17,640 --> 00:02:20,900
+the desktop layout, but we will get to
+that later.
+
+34
+00:02:20,900 --> 00:02:25,110
+For now we're just concerned with kind of
+the mobile view here.
+
+35
+00:02:26,120 --> 00:02:27,660
+So far so good.
+
+36
+00:02:27,660 --> 00:02:29,890
+There's one last thing we need to fix
+
+37
+00:02:29,890 --> 00:02:33,140
+before we move our attention on to other
+things.
+
+38
+00:02:33,140 --> 00:02:37,270
+If you look at the footer you'll notice
+that it's somehow up
+
+39
+00:02:37,270 --> 00:02:39,630
+inside of the gallery here.
+
+40
+00:02:39,630 --> 00:02:43,770
+That's because it's behaving exactly as
+it's been told.
+
+41
+00:02:43,770 --> 00:02:47,710
+It's simply flowing around these other
+floated elements.
+
+42
+00:02:47,710 --> 00:02:51,900
+We need this footer to be cleared of any
+influence from
+
+43
+00:02:51,900 --> 00:02:57,320
+the other floats on both the left and the
+right sides.
+
+44
+00:02:57,320 --> 00:03:02,940
+So, let's find our footer and add a
+property called clear.
+
+45
+00:03:02,940 --> 00:03:06,720
+We'll set the value of clear to both
+because
+
+46
+00:03:06,720 --> 00:03:11,310
+we want it to be cleared on both the left
+and the right sides.
+
+47
+00:03:11,310 --> 00:03:16,820
+So lets scroll up here.
+And just below where
+
+48
+00:03:16,820 --> 00:03:22,400
+it says, text align center, we'll go ahead
+and say, clear both,
+
+49
+00:03:23,650 --> 00:03:28,410
+save that out, switch back to the browser
+and refresh.
+
+50
+00:03:30,640 --> 00:03:35,520
+And as you can see, the footer is now
+exactly where it belongs again.
+
+51
+00:03:35,520 --> 00:03:40,710
+There's still those spacing problems up at
+the top of the page, but we'll fix
+
+52
+00:03:40,710 --> 00:03:45,700
+that up soon when we put the finishing
+touches on our navigation and header.
+
+53
+00:03:47,170 --> 00:03:51,060
+Our gallery is pretty much done, we'll
+need to do some additional work to make
+
+54
+00:03:51,060 --> 00:03:56,160
+it look better on desktop browsers and
+we'll also need to do some mobile testing,
+
+55
+00:03:56,160 --> 00:03:58,560
+but so far things are coming together.
+
+56
+00:03:58,560 --> 00:04:00,870
+We're going to build out our navigation in
+just
+
+57
+00:04:00,870 --> 00:04:04,070
+a moment, but first, let's take a quick
+code challenge.
+

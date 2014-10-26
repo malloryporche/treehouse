@@ -1,0 +1,525 @@
+1
+00:00:00,360 --> 00:00:03,990
+Let's wrap up this portion of the project
+by building out the footer.
+
+2
+00:00:03,990 --> 00:00:08,070
+We already have our copyright in place,
+but we should add some social links
+
+3
+00:00:08,070 --> 00:00:12,460
+and icons so that people can connect with
+us from any page on the site.
+
+4
+00:00:13,910 --> 00:00:19,330
+First, let's add in the social icons for
+Twitter and Facebook.
+
+5
+00:00:19,330 --> 00:00:21,640
+If you don't have a Twitter account or
+
+6
+00:00:21,640 --> 00:00:25,710
+a Facebook account or either one don't
+worry.
+
+7
+00:00:25,710 --> 00:00:29,200
+You can go ahead and link to whatever site
+you'd like
+
+8
+00:00:29,200 --> 00:00:31,560
+or you don't have to link to any site at
+all.
+
+9
+00:00:32,560 --> 00:00:34,330
+If you do choose to link to another
+
+10
+00:00:34,330 --> 00:00:38,140
+website or another social network, just be
+sure
+
+11
+00:00:38,140 --> 00:00:42,020
+to replace the imagery with the
+appropriate logo
+
+12
+00:00:42,020 --> 00:00:45,260
+for that social network, or for that site.
+
+13
+00:00:45,260 --> 00:00:50,810
+The iconography we need for Twitter and
+Facebook are included with the project
+
+14
+00:00:50,810 --> 00:00:53,040
+files for this video.
+
+15
+00:00:53,040 --> 00:00:57,030
+So if you haven't already downloaded the
+images folder,
+
+16
+00:00:57,030 --> 00:00:59,610
+like we did in the previous video, be sure
+
+17
+00:00:59,610 --> 00:01:01,610
+to do that now and include them in the
+
+18
+00:01:01,610 --> 00:01:06,910
+project, simply by dragging them onto the
+file tree here.
+
+19
+00:01:06,910 --> 00:01:10,220
+Now, let's go ahead and scroll down to our
+footer.
+
+20
+00:01:12,460 --> 00:01:15,630
+And inside of this footer,
+
+21
+00:01:17,770 --> 00:01:23,500
+I'm going to type image src for source
+
+22
+00:01:23,500 --> 00:01:28,420
+and then I'm going to type the relative
+path to our Twitter
+
+23
+00:01:28,420 --> 00:01:33,822
+wrap ping image here or PNG.
+So I'm going to type
+
+24
+00:01:33,822 --> 00:01:39,396
+Twitter-wrap.png
+
+25
+00:01:39,396 --> 00:01:42,770
+and I need to go back to the beginning
+here to make sure
+
+26
+00:01:42,770 --> 00:01:49,320
+that I include the image folder there
+because it's inside of the images folder,
+
+27
+00:01:49,320 --> 00:01:54,620
+so just typing Twitter-wrap won't work.
+You need the images folder.
+
+28
+00:01:54,620 --> 00:01:57,640
+And then I'm going to type an alt
+attribute.
+
+29
+00:01:57,640 --> 00:02:01,630
+And in this case, we're not going to add
+captions to these images.
+
+30
+00:02:01,630 --> 00:02:07,805
+So we do need to add an alt attribute.
+So the alt attribute I'm going to type,
+
+31
+00:02:07,805 --> 00:02:12,500
+is just going to say, Twitter Logo,
+because that's what this picture is.
+
+32
+00:02:13,890 --> 00:02:18,880
+Now to save some time, I'm going to copy
+this line and paste it
+
+33
+00:02:19,960 --> 00:02:25,520
+because we just need to change Twitter to
+say Facebook
+
+34
+00:02:25,520 --> 00:02:30,490
+and then we just need to change the alt
+attribute to also say Facebook.
+
+35
+00:02:32,190 --> 00:02:32,610
+Again,
+
+36
+00:02:32,610 --> 00:02:36,990
+you could find alternative icons that you
+like better provided
+
+37
+00:02:36,990 --> 00:02:40,870
+you have the permission from the owner to
+use them.
+
+38
+00:02:40,870 --> 00:02:45,880
+Now, let's link these to our Twitter and
+Facebook profiles.
+
+39
+00:02:45,880 --> 00:02:50,670
+I'm going to type in the links to my
+personal Twitter and Facebook here.
+
+40
+00:02:50,670 --> 00:02:53,660
+But you should type in the links to your
+own profile.
+
+41
+00:02:54,680 --> 00:02:57,910
+So, at the beginning of this line, I'm
+going to type an anchor
+
+42
+00:02:57,910 --> 00:03:01,225
+element with the href.
+
+43
+00:03:01,225 --> 00:03:11,220
+Http://twitter.com/NickRP,
+
+44
+00:03:11,220 --> 00:03:13,740
+which is my username on Twitter.
+
+45
+00:03:13,740 --> 00:03:16,770
+Then I'm going to close this.
+
+46
+00:03:16,770 --> 00:03:20,660
+And I'm just gonna take this closing
+anchor tag,
+
+47
+00:03:20,660 --> 00:03:23,680
+and put it at the end of this line.
+
+48
+00:03:23,680 --> 00:03:27,510
+So we have an opening anchor.
+
+49
+00:03:27,510 --> 00:03:31,880
+The image for Twitter, and then a closing
+anchor.
+
+50
+00:03:31,880 --> 00:03:36,090
+So this will create a picture that links
+to my Twitter profile.
+
+51
+00:03:37,440 --> 00:03:40,160
+Now, we need to do the same thing for
+Facebook.
+
+52
+00:03:41,920 --> 00:03:45,650
+So I'm just going to copy that line and
+paste it here.
+
+53
+00:03:47,390 --> 00:03:49,056
+We need to change
+
+54
+00:03:49,056 --> 00:03:53,050
+twitter.com to facebook.com.
+
+55
+00:03:53,050 --> 00:03:57,990
+And my username on Facebook is different
+than my Twitter handle.
+
+56
+00:03:57,990 --> 00:04:04,560
+So I'm going to type Nick Pettit and then
+at the end of this line, which
+
+57
+00:04:04,560 --> 00:04:07,330
+you'll notice has actually wrapped to the
+next
+
+58
+00:04:07,330 --> 00:04:13,040
+line, I'm going to close my anchor
+element.
+
+59
+00:04:13,040 --> 00:04:14,390
+If you don't want
+
+60
+00:04:14,390 --> 00:04:17,900
+to wrap to the next like this you can go
+up to
+
+61
+00:04:17,900 --> 00:04:23,820
+the View menu and uncheck Word Wrap and
+that will leave your lines
+
+62
+00:04:23,820 --> 00:04:27,680
+as is, but it will add in a scroll bar
+down at the
+
+63
+00:04:27,680 --> 00:04:31,430
+bottom so that you can see what's at the
+end of the line.
+
+64
+00:04:32,650 --> 00:04:39,430
+I actually prefer to keep word wrap on so
+that I can see all of my code at
+
+65
+00:04:39,430 --> 00:04:43,120
+once without having to scroll
+horizontally.
+
+66
+00:04:43,120 --> 00:04:50,180
+So again, even though this looks like it's
+on a new line, it's actually all one line.
+
+67
+00:04:50,180 --> 00:04:51,820
+And you can see that if you look at
+
+68
+00:04:51,820 --> 00:04:56,550
+the line numbering over here on the left
+hand side.
+
+69
+00:04:56,550 --> 00:05:02,850
+Now let's save the page, go to our
+preview, and refresh.
+
+70
+00:05:04,530 --> 00:05:04,660
+If
+
+71
+00:05:04,660 --> 00:05:10,350
+I scroll all the way down to the bottom of
+the page, you can see the logos for
+
+72
+00:05:10,350 --> 00:05:19,310
+Twitter and Facebook and if I click them,
+it will bring up my Twitter profile.
+
+73
+00:05:23,420 --> 00:05:25,860
+Now there is one more very important thing
+that
+
+74
+00:05:25,860 --> 00:05:28,850
+I'd like to point out before we wrap up.
+
+75
+00:05:28,850 --> 00:05:33,320
+We've used two different types of links on
+this page now.
+
+76
+00:05:33,320 --> 00:05:36,240
+Notice how the links in the images
+
+77
+00:05:36,240 --> 00:05:40,410
+are relative links like we discussed
+previously,
+
+78
+00:05:41,680 --> 00:05:47,600
+but over here, we have the full web
+address, which is an absolute link.
+
+79
+00:05:49,890 --> 00:05:56,510
+A relative link describes the location of
+a file relative to the current file.
+
+80
+00:05:57,700 --> 00:06:02,870
+So again, index is relative to the image
+folder.
+
+81
+00:06:02,870 --> 00:06:06,850
+They're sitting at the same level in the
+directory structure.
+
+82
+00:06:06,850 --> 00:06:12,180
+And you can see that because they're
+aligned with one another just like so.
+
+83
+00:06:12,180 --> 00:06:15,220
+And then inside of the image folder,
+
+84
+00:06:15,220 --> 00:06:19,920
+is our image, twitter-wrap and
+facebook-wrap.
+
+85
+00:06:19,920 --> 00:06:26,870
+If you can't see all of the filename, you
+can go ahead and adjust the size of the
+
+86
+00:06:26,870 --> 00:06:30,590
+gutter here or the size of the file tree
+
+87
+00:06:30,590 --> 00:06:35,120
+relative to the size of the text editing
+area.
+
+88
+00:06:35,120 --> 00:06:40,940
+As a general rule you want to use relative
+links whenever possible,
+
+89
+00:06:40,940 --> 00:06:44,240
+because this will make your website more
+portable.
+
+90
+00:06:45,860 --> 00:06:48,000
+What I mean by that, is when we take
+
+91
+00:06:48,000 --> 00:06:52,620
+our entire directory structure and put it
+somewhere else,
+
+92
+00:06:52,620 --> 00:06:56,830
+all of these relative links will still
+work with
+
+93
+00:06:56,830 --> 00:07:00,802
+this index file, because they're in the
+same directory together.
+
+94
+00:07:00,802 --> 00:07:06,120
+If Iwere to type out the full domain name
+here,
+
+95
+00:07:06,120 --> 00:07:12,850
+so we could say, example.com/image/ the
+name
+
+96
+00:07:12,850 --> 00:07:19,210
+of the file, and if we did that, and then
+we tried to put this website on
+
+97
+00:07:19,210 --> 00:07:24,680
+another domain, such as example two or
+something like that,
+
+98
+00:07:24,680 --> 00:07:30,380
+then all of our images would break because
+it's not the same path anymore.
+
+99
+00:07:30,380 --> 00:07:31,210
+So you want to keep
+
+100
+00:07:31,210 --> 00:07:32,920
+these relative.
+
+101
+00:07:32,920 --> 00:07:39,400
+However, because we're linking to an
+external website such as Twitter
+
+102
+00:07:39,400 --> 00:07:45,280
+and Facebook in this particular case We do
+need to use absolute links.
+
+103
+00:07:46,690 --> 00:07:52,080
+So to remember this rule just think you
+need to use relative links whenever you
+
+104
+00:07:52,080 --> 00:07:57,960
+can and only use absolute links when you
+absolutely have to.
+
+105
+00:08:00,560 --> 00:08:03,440
+We added a ton more markup to our page.
+
+106
+00:08:03,440 --> 00:08:07,900
+It can take a long time to memorize HTML
+elements and CSS properties.
+
+107
+00:08:07,900 --> 00:08:10,190
+And even the best web designers look
+things
+
+108
+00:08:10,190 --> 00:08:12,970
+up using a search engine all the time.
+
+109
+00:08:12,970 --> 00:08:16,420
+Don't worry if you're having trouble
+taking in everything we're covering.
+
+110
+00:08:16,420 --> 00:08:21,480
+What will help more than anything else is
+lots of practice so let's pause for
+
+111
+00:08:21,480 --> 00:08:25,440
+a code challenge and code some more with
+the elements that we just learned about.
+

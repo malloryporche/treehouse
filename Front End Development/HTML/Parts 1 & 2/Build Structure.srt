@@ -1,0 +1,618 @@
+1
+00:00:00,340 --> 00:00:02,490
+With our wire frames in hand, we're ready
+
+2
+00:00:02,490 --> 00:00:05,690
+to block out the basic structure of our
+website.
+
+3
+00:00:05,690 --> 00:00:08,610
+Over the last few years, new HTML elements
+
+4
+00:00:08,610 --> 00:00:12,240
+have become available along with several
+new technologies.
+
+5
+00:00:12,240 --> 00:00:18,020
+Collectively, these new elements and
+technologies are referred to as HTML5.
+
+6
+00:00:18,020 --> 00:00:21,190
+Now, this might imply a new version of
+HTML.
+
+7
+00:00:21,190 --> 00:00:23,640
+But it's a little bit of a misnomer.
+
+8
+00:00:23,640 --> 00:00:25,450
+I'm just telling you this now so that
+
+9
+00:00:25,450 --> 00:00:27,870
+when you hear other web designers and
+developers
+
+10
+00:00:27,870 --> 00:00:31,920
+use the term HTML5, you don't get
+confused.
+
+11
+00:00:31,920 --> 00:00:35,930
+All it really means are some new HTML
+elements that weren't
+
+12
+00:00:35,930 --> 00:00:40,510
+available previously, along with a few new
+pieces of browser technology.
+
+13
+00:00:40,510 --> 00:00:41,700
+Now, let's get coding.
+
+14
+00:00:43,020 --> 00:00:46,940
+First, let's get rid of these style tags.
+
+15
+00:00:46,940 --> 00:00:50,490
+I'm going to highlight this entire area
+and press
+
+16
+00:00:50,490 --> 00:00:51,300
+the Delete key.
+
+17
+00:00:53,640 --> 00:00:56,460
+We don't need them because we'll add style
+later on.
+
+18
+00:00:57,480 --> 00:01:01,600
+We'll hold on to our headline, because we
+will still need it later.
+
+19
+00:01:02,880 --> 00:01:04,900
+Every web page has to start with what's
+
+20
+00:01:04,900 --> 00:01:09,470
+called a document type, or doc type for
+short.
+
+21
+00:01:09,470 --> 00:01:11,280
+And it looks like this.
+
+22
+00:01:11,280 --> 00:01:15,840
+Start out with an opening angle bracket,
+an exclamation point.
+
+23
+00:01:16,920 --> 00:01:19,570
+The word doc type
+
+24
+00:01:19,570 --> 00:01:25,940
+in all capital letters, a space, the word
+html
+
+25
+00:01:25,940 --> 00:01:30,370
+in lower case letters, and then a closing
+angle bracket.
+
+26
+00:01:31,760 --> 00:01:35,940
+There's no closing tag and this tag also
+
+27
+00:01:35,940 --> 00:01:39,740
+won't create anything that's visible on
+the page.
+
+28
+00:01:39,740 --> 00:01:45,410
+There are many other tags like this that
+only serve structural purposes and
+
+29
+00:01:45,410 --> 00:01:49,250
+are not actually visible to the site
+visitor.
+
+30
+00:01:49,250 --> 00:01:52,860
+This doc type basically tells the browser
+that this is
+
+31
+00:01:52,860 --> 00:01:57,940
+an HTML document and that's how it should
+be interpreted.
+
+32
+00:01:57,940 --> 00:02:01,860
+The doc type should always be the first
+thing on the page.
+
+33
+00:02:01,860 --> 00:02:06,150
+And it should always be at the top,
+without any space before it.
+
+34
+00:02:07,680 --> 00:02:12,200
+Now, let's create an HTML element.
+
+35
+00:02:12,200 --> 00:02:16,670
+Of course, everything that we'll be
+creating here is an HTML element.
+
+36
+00:02:16,670 --> 00:02:24,000
+But this element is actually called HTML.
+[SOUND].
+
+37
+00:02:24,000 --> 00:02:27,960
+This will serve as the root of our
+document structure, and
+
+38
+00:02:27,960 --> 00:02:32,930
+similar to the doc type, it won't be
+visible to visitors.
+
+39
+00:02:32,930 --> 00:02:37,660
+I'm going to wrap our headline with the
+HTML tags and
+
+40
+00:02:37,660 --> 00:02:41,990
+then indent it, so that I can easily see
+that it's nested.
+
+41
+00:02:43,580 --> 00:02:48,290
+To do this, I'm going to highlight our h1
+element.
+
+42
+00:02:48,290 --> 00:02:57,280
+I'm going to cut it by hitting Cmd+X on a
+Mac or Ctrl+X on Windows.
+
+43
+00:02:57,280 --> 00:03:00,380
+Then I'm going to click inside of our HTML
+element,
+
+44
+00:03:02,930 --> 00:03:08,310
+create some space, then I'm going to paste
+it by hitting Cmd+V on
+
+45
+00:03:08,310 --> 00:03:13,621
+a Mac or Ctrl+V on Windows.
+Then I'm going
+
+46
+00:03:13,621 --> 00:03:20,000
+to go to the beginning of the line and hit
+Tab to indent it.
+
+47
+00:03:20,000 --> 00:03:23,490
+One way you can go quickly from the
+beginning to the end of
+
+48
+00:03:23,490 --> 00:03:28,170
+the line, or vice versa, is by holding
+down the Command key and using
+
+49
+00:03:28,170 --> 00:03:30,410
+the arrows, if you're on a mac, or
+
+50
+00:03:30,410 --> 00:03:33,950
+hitting Control and the arrows if you're
+on Windows.
+
+51
+00:03:33,950 --> 00:03:37,460
+So for example, on my Mac here, I can hit
+Command
+
+52
+00:03:37,460 --> 00:03:40,790
+and right arrow to go to the end of the
+line.
+
+53
+00:03:40,790 --> 00:03:45,760
+Or Command and left arrow to go to the
+beginning of the line.
+
+54
+00:03:45,760 --> 00:03:48,970
+This handy tip will help you navigate text
+more quickly.
+
+55
+00:03:50,140 --> 00:03:53,440
+Now we're ready to add two more elements
+to our page,
+
+56
+00:03:53,440 --> 00:03:56,160
+which are the head element and the body
+element.
+
+57
+00:03:57,300 --> 00:04:01,560
+Both of these need to go inside of our
+HTML element.
+
+58
+00:04:03,570 --> 00:04:09,700
+I'm going to type head and I'm just going
+to leave that right above our h1.
+
+59
+00:04:09,700 --> 00:04:13,670
+Gonna go to the end of the line and create
+a
+
+60
+00:04:13,670 --> 00:04:17,400
+new line and then I'm going to type a body
+element.
+
+61
+00:04:19,160 --> 00:04:23,760
+Once again our h1 element needs to go
+inside of the body.
+
+62
+00:04:23,760 --> 00:04:28,930
+And in this case, I'm going to use a new
+keyboard shortcut to
+
+63
+00:04:28,930 --> 00:04:36,690
+actually highlight this body element.
+To do this on a Mac, you can hit Cmd+Shift
+
+64
+00:04:36,690 --> 00:04:41,010
+and then the arrow key depending on the
+direction that you want to highlight.
+
+65
+00:04:42,840 --> 00:04:44,965
+To do this on Windows, you just hit
+
+66
+00:04:44,965 --> 00:04:48,300
+Ctrl+Shift and then the direction you want
+to highlight.
+
+67
+00:04:49,920 --> 00:04:53,930
+So on my Mac, with my insertion point in
+between the two tags,
+
+68
+00:04:53,930 --> 00:04:58,391
+I'm going to Cmd+Shift and then right
+arrow to
+
+69
+00:04:58,391 --> 00:05:03,280
+highlight it, Cmd+X to cut it I'm gonna go
+to the
+
+70
+00:05:03,280 --> 00:05:08,220
+end of the line here, and paste in that
+body tag.
+
+71
+00:05:09,610 --> 00:05:14,460
+And then I'm going to indent this line
+just
+
+72
+00:05:14,460 --> 00:05:19,140
+like that.
+That way I'll know my h1 is nested
+
+73
+00:05:19,140 --> 00:05:24,670
+inside of my body.
+Which is also nested inside of my HTML.
+
+74
+00:05:25,860 --> 00:05:31,110
+At this point, you're probably starting to
+see why indentation is so important.
+
+75
+00:05:31,110 --> 00:05:36,170
+When you have a much larger HTML file, as
+we will later on, it's important to
+
+76
+00:05:36,170 --> 00:05:42,130
+use indentation so that you can see how
+elements are nested inside of one another.
+
+77
+00:05:42,130 --> 00:05:44,190
+Now let's talk about these two elements
+that we
+
+78
+00:05:44,190 --> 00:05:45,750
+just added.
+
+79
+00:05:45,750 --> 00:05:50,740
+The head element will contain what's
+called meta information, about
+
+80
+00:05:50,740 --> 00:05:55,220
+our document, which again won't be visible
+to site visitors.
+
+81
+00:05:55,220 --> 00:05:58,810
+However, it will contain important
+information like
+
+82
+00:05:58,810 --> 00:06:03,560
+CSS, which will modify the visuals later
+on.
+
+83
+00:06:03,560 --> 00:06:09,870
+The head element is not the same thing as
+the website header we wire framed earlier.
+
+84
+00:06:09,870 --> 00:06:11,690
+I know that's a little bit confusing right
+
+85
+00:06:11,690 --> 00:06:14,770
+now but don't worry, we'll explain the
+difference soon.
+
+86
+00:06:16,010 --> 00:06:20,500
+The body element, which we typed right
+here
+
+87
+00:06:20,500 --> 00:06:24,160
+will contain the rest of our website
+content.
+
+88
+00:06:24,160 --> 00:06:27,980
+In other words, this is the body of the
+document.
+
+89
+00:06:27,980 --> 00:06:31,260
+Once again, I've indented my headline
+element further
+
+90
+00:06:31,260 --> 00:06:34,310
+because it's two levels deep here inside
+of
+
+91
+00:06:34,310 --> 00:06:40,420
+HTML and body.
+Now, let's jump inside of the head
+
+92
+00:06:40,420 --> 00:06:46,100
+and hit Enter, to create some space.
+Hit Tab to indent our code.
+
+93
+00:06:46,100 --> 00:06:51,310
+And then, let's type a title for our
+website.
+
+94
+00:06:52,480 --> 00:06:54,180
+I'm going to write my name,
+
+95
+00:06:56,390 --> 00:07:00,200
+followed by a space and a vertical pipe
+which
+
+96
+00:07:00,200 --> 00:07:05,050
+you can type by hitting Shift and the
+backslash key.
+
+97
+00:07:06,370 --> 00:07:11,040
+Then another space, and I'm going to type
+the word designer.
+
+98
+00:07:12,150 --> 00:07:16,980
+Because this website is going to be my
+design portfolio.
+
+99
+00:07:16,980 --> 00:07:21,460
+You might wanna put something else, like
+photographer or expert
+
+100
+00:07:21,460 --> 00:07:23,690
+cupcake baker.
+
+101
+00:07:23,690 --> 00:07:26,720
+The title tag usually appears in browser
+
+102
+00:07:26,720 --> 00:07:30,200
+tabs so you know what website you're
+visiting.
+
+103
+00:07:30,200 --> 00:07:33,160
+It will also appear in search engine
+result pages.
+
+104
+00:07:34,210 --> 00:07:39,020
+Now let's add the character set for the
+page just above the title.
+
+105
+00:07:40,740 --> 00:07:47,760
+That will look like this.
+We'll type the word meta followed
+
+106
+00:07:47,760 --> 00:07:53,100
+by charset, an equals sign and
+
+107
+00:07:53,100 --> 00:07:58,130
+then two double quotes.
+Inside of the double quotes, we're
+
+108
+00:07:58,130 --> 00:08:02,256
+going to type utf- and the number
+
+109
+00:08:02,256 --> 00:08:07,890
+eight.
+And finally, we need to close our Meta
+
+110
+00:08:07,890 --> 00:08:13,790
+tag, this code looks a little bit
+intimidating, but don't let it scare you.
+
+111
+00:08:13,790 --> 00:08:16,970
+It's simply telling the browser how our
+webpage
+
+112
+00:08:16,970 --> 00:08:21,240
+is formatted and what types of characters
+are used.
+
+113
+00:08:21,240 --> 00:08:25,580
+Similar to the DOC type, it's not visible
+to the site visitor.
+
+114
+00:08:25,580 --> 00:08:28,660
+It also doesn't have a closing tag.
+
+115
+00:08:28,660 --> 00:08:34,480
+Inside of this meta tag, you'll notice
+we've used some new syntax.
+
+116
+00:08:34,480 --> 00:08:39,200
+We have a word followed by an equals sign,
+
+117
+00:08:39,200 --> 00:08:43,390
+which is then followed by a value wrapped
+in double quotes.
+
+118
+00:08:44,880 --> 00:08:47,670
+This is called an attribute.
+
+119
+00:08:47,670 --> 00:08:52,800
+Attributes are extra information inside of
+an HTML tag
+
+120
+00:08:52,800 --> 00:08:58,650
+that provides key information to the
+browser about how the page is built.
+
+121
+00:08:58,650 --> 00:09:01,200
+We'll learn more about how to use
+attributes on
+
+122
+00:09:01,200 --> 00:09:04,370
+many other elements, but for now, let's
+focus on what
+
+123
+00:09:04,370 --> 00:09:09,730
+this attribute means.
+The literal translation here is that the
+
+124
+00:09:09,730 --> 00:09:15,820
+character set or charset should be utf-8,
+
+125
+00:09:15,820 --> 00:09:20,740
+or universal character set transformation
+format, eight bit.
+
+126
+00:09:21,740 --> 00:09:23,760
+Don't worry about memorizing that.
+
+127
+00:09:23,760 --> 00:09:26,450
+In fact, I even had to look it up
+
+128
+00:09:26,450 --> 00:09:29,640
+and I've been making websites for more
+than a decade.
+
+129
+00:09:29,640 --> 00:09:33,170
+Again, it just describes how our page is
+formatted.
+

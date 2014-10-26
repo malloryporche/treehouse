@@ -1,0 +1,359 @@
+1
+00:00:00,620 --> 00:00:02,930
+From this point forward, we're actually
+going to
+
+2
+00:00:02,930 --> 00:00:06,320
+be building the mobile version of our site
+first.
+
+3
+00:00:06,320 --> 00:00:10,450
+This might seem a little bit
+counter-intuitive, but modern websites
+
+4
+00:00:10,450 --> 00:00:13,590
+are built with mobile devices in mind from
+the start.
+
+5
+00:00:13,590 --> 00:00:15,625
+There's two factors feeding into this.
+
+6
+00:00:15,625 --> 00:00:16,460
+[SOUND].
+
+7
+00:00:16,460 --> 00:00:19,670
+First, it's much easier to build a mobile
+website
+
+8
+00:00:19,670 --> 00:00:22,920
+when you're fist starting out because,
+it's much simpler.
+
+9
+00:00:22,920 --> 00:00:25,760
+You don't have to worry about tons of
+complex features,
+
+10
+00:00:25,760 --> 00:00:29,080
+advertisements, complex layouts, and so
+on.
+
+11
+00:00:29,080 --> 00:00:33,670
+Instead, you have to reduce a website to
+its pure essence.
+
+12
+00:00:33,670 --> 00:00:36,590
+Then, when you move your design up to more
+robust
+
+13
+00:00:36,590 --> 00:00:42,190
+platforms like tablets and desktops, you
+can progressively enhance your website.
+
+14
+00:00:42,190 --> 00:00:46,410
+This is easier than creating a really
+complex website on the desktop, and
+
+15
+00:00:46,410 --> 00:00:51,400
+then trying to figure out how jam that
+experience onto a tiny screen.
+
+16
+00:00:51,400 --> 00:00:54,200
+Second, it's very important to pay
+attention to the
+
+17
+00:00:54,200 --> 00:00:59,040
+mobile experience, the mobile web is not a
+small platform.
+
+18
+00:00:59,040 --> 00:01:03,740
+In fact, mobile browsing is on track to
+eclipse desktop browsing,
+
+19
+00:01:03,740 --> 00:01:07,200
+if it hasn't already done so, by the time
+you watch this.
+
+20
+00:01:07,200 --> 00:01:09,160
+It really is moving fast.
+
+21
+00:01:09,160 --> 00:01:13,180
+So, it's imperative that we design a great
+experience on mobile
+
+22
+00:01:13,180 --> 00:01:16,860
+from the start, and work our way up to the
+desktop.
+
+23
+00:01:16,860 --> 00:01:18,670
+For your own reference, here's what my
+
+24
+00:01:18,670 --> 00:01:21,000
+finished mobile website is going to look
+like.
+
+25
+00:01:22,400 --> 00:01:24,990
+Now, let's jump back into the code and
+remove
+
+26
+00:01:24,990 --> 00:01:28,470
+that ugly orange background we were using
+for testing purposes.
+
+27
+00:01:29,820 --> 00:01:34,680
+Now, let's remove the orange background on
+our wrapper,
+
+28
+00:01:34,680 --> 00:01:37,300
+because we don't actually need that in our
+project.
+
+29
+00:01:37,300 --> 00:01:40,410
+That was just for the purposes of an
+example.
+
+30
+00:01:40,410 --> 00:01:41,946
+And, let's close
+
+31
+00:01:41,946 --> 00:01:47,277
+out this portion of the lesson by styling
+our headline elements.
+
+32
+00:01:47,277 --> 00:01:50,503
+To do that, we'll first need to select
+them.
+
+33
+00:01:50,503 --> 00:01:54,931
+I'm going to apply an ID called Logo to
+the anchor
+
+34
+00:01:54,931 --> 00:01:59,960
+element, that wraps them.
+So, to do that we need to switch over to
+
+35
+00:01:59,960 --> 00:02:07,190
+our HTML, and inside of this anchor
+element, that wraps our headlines,
+
+36
+00:02:07,190 --> 00:02:13,250
+we need to type ID, and we're going to
+call it Logo.
+
+37
+00:02:13,250 --> 00:02:16,214
+And we'll save that, and then back in our
+CSS
+
+38
+00:02:16,214 --> 00:02:20,790
+here, I created a little bit of space
+after our wrapper.
+
+39
+00:02:20,790 --> 00:02:26,840
+And I'm going to, again, using ID
+selector, using the HASH or pound sign,
+
+40
+00:02:26,840 --> 00:02:32,210
+and select the Logo, and then, inside of
+the selector, I'm going
+
+41
+00:02:32,210 --> 00:02:35,230
+to make a few declarations.
+
+42
+00:02:35,230 --> 00:02:40,170
+And first I'm using the property,
+text-align with the value center.
+
+43
+00:02:40,170 --> 00:02:42,100
+We'll go over that in just a moment.
+
+44
+00:02:42,100 --> 00:02:48,780
+And then I'm setting the margin to 0.
+Now lets explain what we just did here.
+
+45
+00:02:48,780 --> 00:02:52,802
+I've used the text-align property to align
+the text, so just like
+
+46
+00:02:52,802 --> 00:02:57,680
+in a word processing program we can align
+our text to the left,
+
+47
+00:02:57,680 --> 00:02:59,640
+right, or center.
+
+48
+00:02:59,640 --> 00:03:05,240
+I want my text to be centered, so I've
+typed out the value center.
+
+49
+00:03:05,240 --> 00:03:09,970
+You've probably noticed by now that some
+properties take values that are
+
+50
+00:03:09,970 --> 00:03:15,870
+numeric and some take words, which are
+commonly called keywords.
+
+51
+00:03:15,870 --> 00:03:22,080
+So for example, center, or none, are known
+as keywords.
+
+52
+00:03:23,210 --> 00:03:26,876
+Some properties like margin can even take
+both
+
+53
+00:03:26,876 --> 00:03:30,656
+key words and numeric values, as you see
+here.
+
+54
+00:03:30,656 --> 00:03:34,096
+When you're first starting to learn CSS,
+this can
+
+55
+00:03:34,096 --> 00:03:36,736
+be a little bit tricky, but if there are
+
+56
+00:03:36,736 --> 00:03:39,536
+keywords that you can use to fill a value,
+
+57
+00:03:39,536 --> 00:03:43,687
+WorkSpaces can help you with its code
+completion features.
+
+58
+00:03:43,687 --> 00:03:48,286
+You'll notice that when I finished typing
+text-align, and I'll do that
+
+59
+00:03:48,286 --> 00:03:50,360
+again just so you can see it here.
+
+60
+00:03:50,360 --> 00:03:55,510
+It will suggest some of those keywords to
+complete it.
+
+61
+00:03:55,510 --> 00:04:01,240
+If I just use the arrow keys, I can move
+up and down the selection here, and I can
+
+62
+00:04:01,240 --> 00:04:06,370
+select Center and hit Enter to actually
+type that out for me automatically.
+
+63
+00:04:06,370 --> 00:04:09,520
+I don't need to do that manually, if I
+don't want to.
+
+64
+00:04:09,520 --> 00:04:13,430
+With practice and a few websites, you'll
+start to memorize these.
+
+65
+00:04:13,430 --> 00:04:16,900
+But, don't feel bad if you need to refer
+back to
+
+66
+00:04:16,900 --> 00:04:21,370
+these videos or use a search engine to
+look them up.
+
+67
+00:04:21,370 --> 00:04:26,960
+Next, I've applied a value of 0 to our
+margin here.
+
+68
+00:04:26,960 --> 00:04:32,350
+I don't want this element to have any
+spacing around the edges, so if I just
+
+69
+00:04:32,350 --> 00:04:38,570
+apply a 0, it will apply it to all four
+sides of our element.
+
+70
+00:04:38,570 --> 00:04:44,050
+Now, if we go ahead and save this file
+here, switch over to our preview, and
+
+71
+00:04:44,050 --> 00:04:50,170
+refresh, you'll see that first, the orange
+background has been removed,
+
+72
+00:04:50,170 --> 00:04:56,600
+but secondly, our headline elements have
+been centered on the page.
+
+73
+00:04:56,600 --> 00:04:59,870
+We've covered a lot of new CSS properties
+and values.
+
+74
+00:04:59,870 --> 00:05:03,960
+So, let's pause for a code challenge, to
+make sure that we didn't miss anything.
+

@@ -1,0 +1,280 @@
+1
+00:00:00,000 --> 00:00:04,640
+Combinators explain the relationship between 2 or more selectors.
+
+2
+00:00:05,230 --> 00:00:07,810
+We've actually used combinators in previous lessons
+
+3
+00:00:07,810 --> 00:00:09,930
+when we created descendant selectors
+
+4
+00:00:10,050 --> 00:00:14,200
+because the space between the 2 selectors is considered a combinator.
+
+5
+00:00:15,060 --> 00:00:17,370
+Other combinators we can use are the greater-than sign,
+
+6
+00:00:17,370 --> 00:00:21,050
+a plus sign, or a tilde symbol--let's learn how.
+
+7
+00:00:22,400 --> 00:00:28,570
+In a CSS selector, the greater than sign is referred to as a "Child Combinator".
+
+8
+00:00:29,240 --> 00:00:33,740
+and selectors that use child combinators are called "Child Selectors"
+
+9
+00:00:33,740 --> 00:00:39,100
+because they target elements that are direct children of other elements.
+
+10
+00:00:39,600 --> 00:00:44,320
+So let's create our first child selector that will only target
+
+11
+00:00:44,320 --> 00:00:50,510
+the links that are direct children of our "div" with the class "main"
+
+12
+00:00:50,620 --> 00:00:57,840
+which, as you can see here in the browser, is outlined by the solid 1 pixel border.
+
+13
+00:00:59,230 --> 00:01:03,170
+So remember, direct children are only those elements
+
+14
+00:01:03,170 --> 00:01:07,280
+that are directly nested inside the parent. 
+
+15
+00:01:10,530 --> 00:01:16,630
+So, in our style.css file, we'll first rate the main CSS class selector
+
+16
+00:01:17,070 --> 00:01:20,190
+then use the greater than sign as our combinator
+
+17
+00:01:20,190 --> 00:01:23,190
+followed by the "a" element selector.
+
+18
+00:01:23,360 --> 00:01:27,390
+We'll then give it a color property and the value red.
+
+19
+00:01:28,690 --> 00:01:32,840
+So, when we saved our style sheet and refresh the browser,
+
+20
+00:01:33,490 --> 00:01:38,970
+We see the the 2 direct child links styled with the red color,
+
+21
+00:01:38,970 --> 00:01:44,240
+while the links nested inside the paragraphs remained unchanged
+
+22
+00:01:44,360 --> 00:01:51,640
+because those links are direct children of the paragraph elements not the main "div."
+
+23
+00:01:51,640 --> 00:01:57,040
+It's also important that we do not confused child selectors
+
+24
+00:01:57,040 --> 00:02:01,270
+with the descendant selector we covered in an earlier lesson.
+
+25
+00:02:01,270 --> 00:02:06,120
+I'll show you what happens if we remove the child combinator in our selector.
+
+26
+00:02:09,120 --> 00:02:11,970
+So, by removing it, it's now a descendant selector
+
+27
+00:02:11,970 --> 00:02:16,510
+because we're using a space between the 2 selectors.
+
+28
+00:02:16,510 --> 00:02:20,240
+So, when we save this and refresh the browser,
+
+29
+00:02:21,160 --> 00:02:24,430
+we can see how all the link in the page have turned red
+
+30
+00:02:24,990 --> 00:02:30,640
+because we've change our selector to target every "a" element descendant
+
+31
+00:02:30,640 --> 00:02:35,250
+of our main "div" instead of the ones that are direct children.
+
+32
+00:02:35,400 --> 00:02:39,340
+So let's go ahead and add it back in to keep this a child selector.
+
+33
+00:02:41,780 --> 00:02:48,240
+Up next, the plus sign combinator is called an "Adjacent Sibling Combinator"
+
+34
+00:02:48,240 --> 00:02:52,520
+and selectors that use them are called "Adjacent Sibling Selectors"
+
+35
+00:02:52,520 --> 00:02:56,740
+ because they target an element "next sibling" on the page.
+
+36
+00:02:57,430 --> 00:02:59,930
+so, the one that immediately follows the element.
+
+37
+00:03:00,960 --> 00:03:03,320
+So for example in our HTML file,
+
+38
+00:03:03,710 --> 00:03:09,940
+the "h2" adjacent sibling is this paragraph element right below
+
+39
+00:03:10,020 --> 00:03:13,450
+because it immediately follows it in the document.  
+
+40
+00:03:13,860 --> 00:03:17,650
+So we can specifically target this paragraph element
+
+41
+00:03:17,650 --> 00:03:20,150
+with an adjacent sibling selector.
+
+42
+00:03:22,170 --> 00:03:25,550
+So in our style sheet, let's create an adjacent sibling selector
+
+43
+00:03:25,550 --> 00:03:28,710
+by first selecting the "h2" element.
+
+44
+00:03:28,780 --> 00:03:35,530
+Then, use the plus sign as our combinator followed by the "P" element selector.
+
+45
+00:03:36,540 --> 00:03:39,610
+I'll then give it color property for the value white
+
+46
+00:03:39,610 --> 00:03:42,590
+I'll add a little bit of padding,
+
+47
+00:03:42,590 --> 00:03:48,760
+and, finally, I will give it a background color of royal blue.
+
+48
+00:03:48,760 --> 00:03:54,990
+So, when we save our style sheet, when we refresh the browser,
+
+49
+00:03:54,990 --> 00:04:00,690
+notice how only those paragraphs immediately following an "h2"
+
+50
+00:04:00,690 --> 00:04:04,410
+have the new color and padding styles applied.
+
+51
+00:04:04,900 --> 00:04:13,690
+Now, if we reverse the selector by placing the paragraph selector before the "h2",
+
+52
+00:04:15,420 --> 00:04:19,360
+We'll save it, and when we bring it up in the browser,
+
+53
+00:04:19,570 --> 00:04:23,710
+we can see that, now, it's only targeting the heading 2
+
+54
+00:04:23,710 --> 00:04:27,010
+that immediately follows a paragraph. 
+
+55
+00:04:27,640 --> 00:04:34,280
+The second heading 2 is an immediate sibling of this link, so it remains unchanged.
+
+56
+00:04:35,500 --> 00:04:42,360
+Finally, if we replace this adjacent sibling combinator with the tilde symbol,
+
+57
+00:04:43,610 --> 00:04:47,440
+This selector now becomes a "General Sibling Selector"
+
+58
+00:04:47,440 --> 00:04:53,010
+The tilde symbol is called a "General Sibling Combinator"
+
+59
+00:04:53,010 --> 00:04:56,520
+because it's use to target other sibling.
+
+60
+00:04:56,790 --> 00:05:00,210
+But this time, it not only targets an immediate sibling.
+
+61
+00:05:00,210 --> 00:05:05,620
+It actually targets every specified sibling that follows an element.
+
+62
+00:05:06,280 --> 00:05:09,270
+So, with this selector, we're telling the browser
+
+63
+00:05:09,270 --> 00:05:14,950
+to target every sibling paragraph that follows a heading 2.
+
+64
+00:05:15,590 --> 00:05:19,840
+So, when we save this and bring it up in the browser, 
+
+65
+00:05:20,190 --> 00:05:23,180
+we see the styles applied to every paragraph
+
+66
+00:05:23,180 --> 00:05:26,580
+that comes after the "h2" elements.
+
+67
+00:05:27,890 --> 00:05:32,840
+Now, even if we remove the second heading 2 in our HTML file,
+
+68
+00:05:35,450 --> 00:05:39,180
+in the browser, we can see how the general sibling selector
+
+69
+00:05:39,180 --> 00:05:42,870
+will still target these last 2 paragraphs
+
+70
+00:05:43,150 --> 00:05:46,410
+because they're still siblings of the heading 2 above.
+

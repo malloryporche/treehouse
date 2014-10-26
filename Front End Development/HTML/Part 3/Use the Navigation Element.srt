@@ -1,0 +1,418 @@
+1
+00:00:00,025 --> 00:00:01,460
+[MUSIC]
+
+2
+00:00:01,460 --> 00:00:02,020
+The
+
+3
+00:00:04,950 --> 00:00:08,490
+most basic components of our site
+structure are now in place.
+
+4
+00:00:08,490 --> 00:00:13,810
+Let's start filling in the details with
+some navigation, content and more.
+
+5
+00:00:13,810 --> 00:00:17,520
+On most websites, you can click the site
+logo on
+
+6
+00:00:17,520 --> 00:00:21,410
+the upper left corner to get back to the
+homepage.
+
+7
+00:00:21,410 --> 00:00:24,950
+Right now we only have one page on our
+site.
+
+8
+00:00:24,950 --> 00:00:30,140
+But soon, we'll have multiple pages that
+will need to link together.
+
+9
+00:00:30,140 --> 00:00:32,560
+When a site visitor goes to another page,
+
+10
+00:00:32,560 --> 00:00:35,890
+this will be the link that takes them
+home.
+
+11
+00:00:35,890 --> 00:00:38,650
+I'll type it out first and then, explain
+it.
+
+12
+00:00:41,060 --> 00:00:49,950
+So I am going to, wrap our H1 and H2
+elements, and an anchor element.
+
+13
+00:00:51,480 --> 00:00:53,970
+And we're just gonna type a little
+attribute here.
+
+14
+00:00:56,970 --> 00:01:00,150
+And then we'll go ahead, and close it.
+
+15
+00:01:02,010 --> 00:01:08,380
+Just like that, and then more indent these
+two lines here.
+
+16
+00:01:10,510 --> 00:01:16,980
+Links are created with what are called
+anger elements or a tags.
+
+17
+00:01:16,980 --> 00:01:22,020
+The a in these two tags of course, stands
+for anchor.
+
+18
+00:01:22,020 --> 00:01:25,580
+The anchor element gets its name because
+it can be
+
+19
+00:01:25,580 --> 00:01:30,630
+used to anchor a URL to some text on a
+page.
+
+20
+00:01:30,630 --> 00:01:36,230
+In this case, we're actually using the
+anchor to go to another page.
+
+21
+00:01:37,290 --> 00:01:44,180
+Inside of the opening anchor tag, you'll
+notice the HREF attribute.
+
+22
+00:01:44,180 --> 00:01:48,220
+This is short for hyper link reference.
+
+23
+00:01:48,220 --> 00:01:53,730
+Inside the quotes, I've stated that I want
+the destination to be
+
+24
+00:01:53,730 --> 00:02:00,350
+our index dot html file, which is what
+we're looking at right now.
+
+25
+00:02:00,350 --> 00:02:04,930
+When we have, other files to link, we'll
+use other destinations.
+
+26
+00:02:06,360 --> 00:02:12,810
+Inside our header we're going to create
+the navigation in the form of a list.
+
+27
+00:02:12,810 --> 00:02:14,930
+Which we'll style later.
+
+28
+00:02:14,930 --> 00:02:17,080
+The first part is easy.
+
+29
+00:02:17,080 --> 00:02:23,140
+We just have to add the nav element, which
+is short for navigation.
+
+30
+00:02:23,140 --> 00:02:31,600
+So, I'm just going to skip down here, and
+add in, our nav element.
+
+31
+00:02:33,020 --> 00:02:35,310
+You can use this element to wrap any
+
+32
+00:02:35,310 --> 00:02:38,500
+kind of website navigation that you put
+together.
+
+33
+00:02:38,500 --> 00:02:42,590
+It doesn't have any special function
+inside the browser.
+
+34
+00:02:42,590 --> 00:02:47,690
+And it doesn't add any buttons or other
+visual bits, its
+
+35
+00:02:47,690 --> 00:02:52,460
+simply a semantic statement that says,
+here's our navigation on the page.
+
+36
+00:02:53,510 --> 00:02:56,150
+Inside of the nav element we're going to
+
+37
+00:02:56,150 --> 00:03:00,390
+create an unordered link of lists like
+this.
+
+38
+00:03:03,160 --> 00:03:08,810
+The UL element is short for unordered
+list.
+
+39
+00:03:08,810 --> 00:03:16,380
+I say unordered because we could also
+create an ordered list with an OL tag.
+
+40
+00:03:16,380 --> 00:03:20,550
+Until we add our own styling, this
+unordered list will look like
+
+41
+00:03:20,550 --> 00:03:25,480
+a bulleted list, like you might create in
+a word processing program.
+
+42
+00:03:25,480 --> 00:03:28,000
+An ordered list would look like a list of
+
+43
+00:03:28,000 --> 00:03:32,930
+numbers instead of bullet points like in
+our unordered list.
+
+44
+00:03:32,930 --> 00:03:35,240
+Now, lets add some list items.
+
+45
+00:03:36,620 --> 00:03:40,440
+I'm going to open up our UL element here
+
+46
+00:03:41,550 --> 00:03:45,550
+and then I'm going to type a list item
+element.
+
+47
+00:03:45,550 --> 00:03:47,520
+And I'm going to type the word, "
+
+48
+00:03:50,090 --> 00:03:51,180
+portfolio".
+
+49
+00:03:53,550 --> 00:03:55,640
+Then I'm gonna type another list item.
+
+50
+00:03:57,490 --> 00:03:58,560
+And type" about".
+
+51
+00:03:59,890 --> 00:04:05,330
+And then, one last list item, which will
+say Contact.
+
+52
+00:04:05,330 --> 00:04:10,460
+Now, I've created three list item
+elements, using these li tags.
+
+53
+00:04:10,460 --> 00:04:13,280
+Then inside I've added some text.
+
+54
+00:04:13,280 --> 00:04:21,410
+Let's save our work, and then switch over
+to our preview, and refresh the page.
+
+55
+00:04:22,560 --> 00:04:25,240
+As you can see, our headline elements at
+
+56
+00:04:25,240 --> 00:04:29,570
+the top Are now colored blue with an
+underline.
+
+57
+00:04:29,570 --> 00:04:34,520
+This is the default styling or a hyperlink
+that's provided by the browser.
+
+58
+00:04:35,660 --> 00:04:39,870
+Our navigation looks like a bulleted list.
+
+59
+00:04:39,870 --> 00:04:43,570
+However, we need to add some links here,
+in order for our
+
+60
+00:04:43,570 --> 00:04:48,030
+site visitors to get around to different
+pages that we'll create later.
+
+61
+00:04:49,170 --> 00:04:51,930
+Let's go ahead and add those links right
+now though.
+
+62
+00:04:53,060 --> 00:04:58,180
+So I'll switch back to my work space, and
+in between
+
+63
+00:04:58,180 --> 00:05:02,910
+my opening list item tag, and the Word
+
+64
+00:05:02,910 --> 00:05:08,070
+portfolio, I'm going to type a hyperlink.
+
+65
+00:05:13,900 --> 00:05:19,400
+And I'm going to link this to index.html
+because our portfolio
+
+66
+00:05:19,400 --> 00:05:24,960
+is actually going to be on our home page
+or our index page.
+
+67
+00:05:26,950 --> 00:05:29,400
+And I need to wrap portfolio,
+
+68
+00:05:31,640 --> 00:05:33,960
+in a closing anchor, just like that.
+
+69
+00:05:35,200 --> 00:05:38,490
+Now, with my about page, I'm going to do
+the same thing,
+
+70
+00:05:41,160 --> 00:05:46,670
+except this time, I'm going to choose a
+different destination.
+
+71
+00:05:46,670 --> 00:05:49,420
+In this case, it will be about.
+
+72
+00:05:49,420 --> 00:05:56,000
+Dot html, and I'm just going to cut my,
+closing
+
+73
+00:05:56,000 --> 00:06:02,060
+anchor tag there and put it around a bell,
+finally,
+
+74
+00:06:03,990 --> 00:06:09,350
+I'm going to type contact.html for this
+final destination here.
+
+75
+00:06:10,510 --> 00:06:13,510
+And I'm going to then close it.
+
+76
+00:06:13,510 --> 00:06:14,440
+So there we go.
+
+77
+00:06:15,800 --> 00:06:18,050
+We have three new links here.
+
+78
+00:06:19,160 --> 00:06:24,350
+Again, the first page is our Index page or
+our Home page.
+
+79
+00:06:24,350 --> 00:06:30,370
+And the other two pages are our About page
+and our Contact page.
+
+80
+00:06:31,920 --> 00:06:35,810
+These pages don't exist yet, but we'll
+create them
+
+81
+00:06:35,810 --> 00:06:40,170
+once we're done with the HTML for our
+first page.
+
+82
+00:06:40,170 --> 00:06:42,200
+Let's go ahead and save this.
+
+83
+00:06:42,200 --> 00:06:46,570
+Switch over to out preview and refresh,
+and
+
+84
+00:06:46,570 --> 00:06:49,920
+as you can see, we now have hyperlinks.
+
+85
+00:06:49,920 --> 00:06:52,200
+For each one of our pages.
+
+86
+00:06:53,270 --> 00:06:57,400
+If you click on the links now, they'll
+probably give you some type of error.
+
+87
+00:06:57,400 --> 00:06:59,420
+When a link doesn't work because the page
+
+88
+00:06:59,420 --> 00:07:03,270
+or content doesn't exist, it's called a
+broken link.
+
+89
+00:07:03,270 --> 00:07:06,590
+And we certainly don't wanna launch our
+site with any broken links.
+
+90
+00:07:06,590 --> 00:07:07,580
+We'll fix those later.
+
