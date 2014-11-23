@@ -22,11 +22,8 @@ if($anchor.parent().hasClass("selected")) {
 
 	
 	
-//Create a button
-var $button = $("<button>Go</button>");
-$("#menu").append($button)
-	//Bind click to button to 
-	$button.click(function() {
+	//Bind change listener to the select 
+	$select.change(function() {
 	//go to Select location
 	window.location = $select.val();	
 	})
