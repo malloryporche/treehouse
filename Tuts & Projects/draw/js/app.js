@@ -2,6 +2,10 @@
 //Solution:  When user interacts cause changes
 var color = $(".selected").css("background-color");
 var context = $("canvas")[0].getContext("2d");
+var $canvas = $("canvas");
+var lastEvent;
+
+var mouseDown = false;
 
 //When clickon on control list items 
 $(".controls").on("click", "li", function() {
@@ -35,16 +39,25 @@ $("input[type=range]").change(changeColor);
 $("#addNewColor").click(function(){
 	//Append color to the controls ul
 	var $newColor = $("<li></li>");
-	$newColor.css('background-color', $("#newColor").css('background-color'))
-	$(".controls ul").append($newColor)
+	$newColor.css('background-color', $("#newColor").css('background-color'));
+	$(".controls ul").append($newColor);
 })
 
 //On mouse events on the canvas
-	//Draw lines
-	context.beginPath();
-	context.moveTo(10, 10);
-	context.lineTo(20, 10);
-	context.lineTo(20, 20);
-	context.lineTo(10, 20);
-	context.lineTo(10, 10);
-	context.stroke();
+$canvas.mousedown(function(e){
+	lastEvent = e;
+	mouseDown = true;
+}).mousemove(function(e){
+//Draw lines
+	if(mouseDown) {
+		context.beginPath();
+		context.moveTo(lastEvent.offsetX, lastEvent.offsetY);
+		context.lineTo(e.offsetX, e.offsetY);
+		context.stroke();
+		context.strokeStyle = color;
+		lastEvent = e;
+	}
+}).mouseup(function(){
+	mouseDown = false;
+});
+	
