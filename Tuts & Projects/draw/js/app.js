@@ -1,6 +1,7 @@
 //Problem:  User interaction causes no change to application
 //Solution:  When user interacts cause changes
 var color = $(".selected").css("background-color");
+var context = $("canvas")[0].getContext("2d");
 
 //When clickon on control list items 
 $(".controls").on("click", "li", function() {
@@ -27,11 +28,8 @@ function changeColor () {
 	$("#newColor").css("background-color", "rgb(" + r  + "," + g + "," + b + ")"); 
 
 }
-
-
 //When color sliders change
 $("input[type=range]").change(changeColor);
-
 
 //When add color is pressed
 $("#addNewColor").click(function(){
@@ -40,7 +38,13 @@ $("#addNewColor").click(function(){
 	$newColor.css('background-color', $("#newColor").css('background-color'))
 	$(".controls ul").append($newColor)
 })
-	
 
 //On mouse events on the canvas
 	//Draw lines
+	context.beginPath();
+	context.moveTo(10, 10);
+	context.lineTo(20, 10);
+	context.lineTo(20, 20);
+	context.lineTo(10, 20);
+	context.lineTo(10, 10);
+	context.stroke();
